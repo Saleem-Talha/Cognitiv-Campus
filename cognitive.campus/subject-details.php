@@ -1,0 +1,247 @@
+<?php include_once('includes/header.php'); ?>
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <?php include_once('includes/sidebar-main.php'); ?>
+        <div class="layout-page">
+            <?php include_once('includes/navbar.php'); ?>
+            <div class="content-wrapper">
+                <?php
+                $courseId = $_GET['id'];
+                $courseType = 'uniCourse';
+                // Only fetch basic course details initially
+                $course = $classroomService->courses->get($courseId);
+                $courseName = $course->getName();
+                 // Fetch course recommendations
+                 $recommendations = [];
+                 $recommendation_query = $db->query("SELECT * FROM course_recommendations 
+                     WHERE source_course_name = '$courseName' 
+                     ORDER BY recommendation_rank ASC");
+ 
+                 if ($recommendation_query->num_rows > 0) {
+                     while ($recommendation = $recommendation_query->fetch_assoc()) {
+                         $recommendations[] = $recommendation;
+                     }
+                 }
+                ?>
+
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="d-flex justify-content-between align-items-center py-3 mb-2">
+                        <h4 class="py-3 mb-4"><span class="text-muted fw-light">Subject /</span> Subject Details</h4>
+                        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#courseRecommendationsModal">
+                                 View Course Recommendations
+                            </button>
+                    </div>
+                    
+                    <!-- Recommendations Modal -->
+                    <div class="modal fade" id="courseRecommendationsModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Recommended Courses for <?php echo htmlspecialchars($courseName); ?></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <?php if (!empty($recommendations)): ?>
+                                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                                        <?php foreach ($recommendations as $index => $recommendation): ?>
+                                            <div class="col">
+                                                <div class="card h-100 shadow-sm">
+                                                    <div class="card-header text-white">
+                                                        <h5 class="card-title mb-0">
+                                                            Recommendation #<?php echo $index + 1 ?> 
+                                                            <span class="badge bg-primary text-white float-end">
+                                                                Rank: <?php echo htmlspecialchars($recommendation['recommendation_rank']); ?>
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                                    <?php echo htmlspecialchars($recommendation['recommended_course_name']); ?>
+                                                                </h6>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-4 text-end">
+                                                                <div class="mb-2">
+                                                                    <small class="text-muted">Difficulty:</small>
+                                                                    <span class="badge bg-label-primary">
+                                                                        <?php echo htmlspecialchars($recommendation['difficulty_level']); ?>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <small class="text-muted">Rating:</small>
+                                                                    <span class="badge bg-label-warning">
+                                                                        <?php echo htmlspecialchars($recommendation['course_rating']); ?>/5
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <small class="text-muted">
+                                                                    <i class="bx bx-map-pin me-1"></i>
+                                                                    <?php echo htmlspecialchars($recommendation['university']); ?>
+                                                                </small>
+                                                            </div>
+                                                            <div class="col-md-6 text-end">
+                                                                <a href="<?php echo htmlspecialchars($recommendation['course_url']); ?>" 
+                                                                class="btn btn-sm btn-outline-primary" 
+                                                                target="_blank">
+                                                                    <i class="bx bx-link-external me-1"></i>View Course
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="text-center p-5">
+                                            <i class="bx bx-info-circle text-primary mb-3" style="font-size: 3rem;"></i>
+                                            <h5 class="mb-3">No Similar Courses Found</h5>
+                                            <p class="text-muted">We couldn't find any courses similar to your current selection.</p>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Teachers Section -->
+                            <h2 class="mb-3">Teachers</h2>
+                            <div id="teachers-container">
+                                <div class="text-center py-4">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading teachers...</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Course Materials Section -->
+                            <div id="materials-container">
+                                <div class="text-center py-4">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading course materials...</span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-md-6">
+                            <!-- Notes Section -->
+                            <?php include("subject-notes.php");?>
+                             <!-- Announcements Section -->
+                             <div id="announcements-container">
+                                <div class="text-center py-4">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading announcements...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Coursework Section -->
+                            <div id="coursework-container">
+                                <div class="text-center py-4">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading coursework...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <?php include_once('includes/footer.php'); ?>
+                <div class="content-backdrop fade"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+<?php include_once('includes/footer-links.php'); ?>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const courseId = '<?php echo $courseId; ?>';
+    const filters = {
+        announcement_start_date: '<?php echo isset($_GET["announcement_start_date"]) ? $_GET["announcement_start_date"] : ""; ?>',
+        announcement_end_date: '<?php echo isset($_GET["announcement_end_date"]) ? $_GET["announcement_end_date"] : ""; ?>',
+        coursework_start_date: '<?php echo isset($_GET["coursework_start_date"]) ? $_GET["coursework_start_date"] : ""; ?>',
+        coursework_end_date: '<?php echo isset($_GET["coursework_end_date"]) ? $_GET["coursework_end_date"] : ""; ?>'
+    };
+
+    // Load all sections asynchronously
+    loadTeachers(courseId);
+    loadAnnouncements(courseId, filters);
+    loadCoursework(courseId, filters);
+    loadMaterials(courseId);
+});
+
+function loadTeachers(courseId) {
+    fetch(`subject-get-teacher.php?id=${courseId}`)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('teachers-container').innerHTML = html;
+        })
+        .catch(error => {
+            showError('teachers-container', 'Error loading teachers');
+        });
+}
+
+function loadAnnouncements(courseId, filters) {
+    const queryParams = new URLSearchParams({
+        id: courseId,
+        ...filters
+    });
+    fetch(`subject-get-announcements.php?${queryParams}`)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('announcements-container').innerHTML = html;
+        })
+        .catch(error => {
+            showError('announcements-container', 'Error loading announcements');
+        });
+}
+
+function loadCoursework(courseId, filters) {
+    const queryParams = new URLSearchParams({
+        id: courseId,
+        ...filters
+    });
+    fetch(`subject-get-coursework.php?${queryParams}`)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('coursework-container').innerHTML = html;
+        })
+        .catch(error => {
+            showError('coursework-container', 'Error loading coursework');
+        });
+}
+
+// Add this function
+function loadMaterials(courseId) {
+    fetch(`subject-get-materials.php?id=${courseId}`)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('materials-container').innerHTML = html;
+        })
+        .catch(error => {
+            showError('materials-container', 'Error loading course materials');
+        });
+}
+
+</script>
