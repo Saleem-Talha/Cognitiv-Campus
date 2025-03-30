@@ -1,0 +1,21 @@
+2024-11-29 15:46:34 - Recommendation Request
+Course Name: Information Security
+Python Script: E:\xampp\htdocs\cognitive.campus\recommendation_script.py
+CSV File: E:\xampp\htdocs\cognitive.campus\dataset\Coursera.csv
+Raw Output: python: can't open file 'E:\\xampp\\htdocs\\cognitive.campus\\recommendation_script.py': [Errno 2] No such file or directory
+
+JSON Decode Error: Syntax error
+2024-11-29 15:48:55 - Recommendation Request
+Course Name: Information Security
+Python Script: E:\xampp\htdocs\cognitive.campus\recommendation_script.py
+CSV File: E:\xampp\htdocs\cognitive.campus\dataset\Coursera.csv
+Raw Output: python: can't open file 'E:\\xampp\\htdocs\\cognitive.campus\\recommendation_script.py': [Errno 2] No such file or directory
+
+JSON Decode Error: Syntax error
+2024-11-29 15:55:06 - Recommendation Request
+Course Name: Information Security
+Python Script: E:\xampp\htdocs\cognitive.campus\recommendation.py
+CSV File: E:\xampp\htdocs\cognitive.campus\dataset\Coursera.csv
+Raw Output: python: can't open file 'E:\\xampp\\htdocs\\cognitive.campus\\recommendation.py': [Errno 2] No such file or directory
+
+JSON Decode Error: Syntax error

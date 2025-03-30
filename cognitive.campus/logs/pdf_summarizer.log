@@ -1,0 +1,56 @@
+2025-03-27 21:18:31,019 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:18:31,061 - INFO: Successfully generated summary
+2025-03-27 21:18:31,166 - INFO: package: mysql.connector.plugins
+2025-03-27 21:18:31,167 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:18:31,175 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:18:31,185 - ERROR: Database insertion error: 1046 (3D000): No database selected
+2025-03-27 21:18:31,191 - INFO: Processed and removed temporary file: uploads/67e57a4b67cdf_Test.pdf
+2025-03-27 21:21:36,611 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:21:36,647 - INFO: Successfully generated summary
+2025-03-27 21:21:36,734 - INFO: package: mysql.connector.plugins
+2025-03-27 21:21:36,734 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:21:36,737 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:21:36,741 - ERROR: Database insertion error: 1046 (3D000): No database selected
+2025-03-27 21:21:36,743 - INFO: Processed and removed temporary file: uploads/67e57b0603cc4_Test.pdf
+2025-03-27 21:22:40,309 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:22:40,346 - INFO: Successfully generated summary
+2025-03-27 21:22:40,443 - INFO: package: mysql.connector.plugins
+2025-03-27 21:22:40,444 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:22:40,449 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:22:40,479 - INFO: Summary saved to database for sample_user@example.com
+2025-03-27 21:22:40,482 - INFO: Processed and removed temporary file: uploads/67e57b48f003a_Test.pdf
+2025-03-27 21:24:04,209 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:24:04,249 - INFO: Successfully generated summary
+2025-03-27 21:24:04,344 - INFO: package: mysql.connector.plugins
+2025-03-27 21:24:04,344 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:24:04,349 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:24:04,367 - INFO: Summary saved to database for sample_user@example.com
+2025-03-27 21:24:04,374 - INFO: Processed and removed temporary file: uploads/67e57b9cbccd4_Test.pdf
+2025-03-27 21:25:34,711 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:25:34,726 - INFO: Successfully generated summary
+2025-03-27 21:25:34,750 - INFO: package: mysql.connector.plugins
+2025-03-27 21:25:34,751 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:25:34,752 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:25:34,765 - INFO: Summary saved to database for 210973@students.au.edu.pk
+2025-03-27 21:25:34,769 - INFO: Processed and removed temporary file: uploads/67e57bf6d7e83_Test.pdf
+2025-03-27 21:27:24,961 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:27:24,975 - INFO: Successfully generated summary
+2025-03-27 21:27:25,014 - INFO: package: mysql.connector.plugins
+2025-03-27 21:27:25,014 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:27:25,016 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:27:25,028 - INFO: Summary saved to database for 210973@students.au.edu.pk
+2025-03-27 21:27:25,029 - INFO: Processed and removed temporary file: uploads/67e57c642f40e_assignment.pdf
+2025-03-27 21:34:09,333 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:34:09,369 - INFO: Successfully generated summary
+2025-03-27 21:34:09,486 - INFO: package: mysql.connector.plugins
+2025-03-27 21:34:09,487 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:34:09,496 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:34:09,513 - INFO: Summary saved to database for 210973@students.au.edu.pk
+2025-03-27 21:34:09,517 - INFO: Processed and removed temporary file: uploads/67e57df85d787_Test.pdf
+2025-03-27 21:54:32,776 - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 21:54:32,795 - INFO: Successfully generated summary
+2025-03-27 21:54:32,815 - INFO: package: mysql.connector.plugins
+2025-03-27 21:54:32,815 - INFO: plugin_name: mysql_native_password
+2025-03-27 21:54:32,817 - INFO: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-03-27 21:54:32,821 - INFO: Summary saved to database for 210973@students.au.edu.pk
+2025-03-27 21:54:32,822 - INFO: Processed and removed temporary file: uploads/67e582c125ed6_assignment.pdf

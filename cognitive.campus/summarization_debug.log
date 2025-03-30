@@ -1,0 +1,8 @@
+2024-12-11 19:12:46,125 - INFO - Received content length: 16
+2024-12-11 19:12:46,125 - DEBUG - Original content length: 16
+2024-12-11 19:12:46,125 - DEBUG - Extracted headings: []
+2024-12-11 19:12:46,126 - DEBUG - Extracted bold texts: []
+2024-12-11 19:12:46,128 - DEBUG - Cleaned content length: 15
+2024-12-11 19:12:46,128 - DEBUG - Cleaned content preview: E-Commerce CRUD
+2024-12-11 19:12:46,129 - DEBUG - Content too short: 15 characters
+2024-12-11 19:12:46,129 - WARNING - Content deemed not meaningful

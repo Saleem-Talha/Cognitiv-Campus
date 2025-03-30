@@ -1,0 +1,198 @@
+
+{
+    "platform_overview": {
+      "name": "Cognitive Campus",
+      "tagline": "Student Productivity Enhancement System using LLM",
+      "mission": "Empowering students with intelligent productivity tools and personalized learning experiences"
+    },
+    "core_features": [
+      "Subjects/Courses Management",
+      "Project Collaboration",
+      "Advanced Note-Taking",
+      "Schedule Management",
+      "AI-Powered Assistant",
+      "Comprehensive Dashboard"
+    ],
+    "courses_management": {
+      "types": [
+        "Extra Courses (User Created)",
+        "Active Courses (Google Classroom)",
+        "Inactive Courses"
+      ],
+      "course_details": [
+        "Teacher Information",
+        "GCR Announcements",
+        "Learning Materials",
+        "Coursework (Quizzes, Assignments, Exams)",
+        "Personal Notes"
+      ],
+      "unique_features": [
+        "Course Activation/Deactivation",
+        "Coursera Course Recommendations"
+      ]
+    },
+    "projects": {
+      "types": ["Own Projects", "Teamspace Projects"],
+      "project_components": [
+        "Project Branches",
+        "User Management",
+        "Task Assignment",
+        "Progress Tracking",
+        "Group Chat",
+        "README",
+        "Notice Board",
+        "Notes Section"
+      ],
+      "owner_capabilities": [
+        "Add/Remove Users",
+        "Email Invitations",
+        "Control Panel Access",
+        "Project Metadata Management"
+      ],
+      "collaboration_features": [
+        "Zip File Upload",
+        "Branch Uploads",
+        "Detailed Task Assignment",
+        "Progress Bar Tracking"
+      ]
+    },
+    "notes_system": {
+      "types": ["Project Notes", "Subject/Course Notes"],
+      "course_note_types": ["Assignment Notes", "Quiz Notes", "General Notes"],
+      "features": [
+        "Date-Based Filtering",
+        "Type-Based Filtering",
+        "Rich Text Editing",
+        "Text-to-Speech",
+        "Infinity Canvas",
+        "Auto-Save"
+      ]
+    },
+    "llm_assistant": {
+      "name": "Cognitive Assistant",
+      "capabilities": [
+        "Contextual Responses",
+        "General Interactions",
+        "Note Summarization",
+        "AI Note Generation",
+        "Schedule Optimization"
+      ]
+    },
+    "auth": {
+      "types": ["Session-Based Authentication", "Google Authentication"],
+      "session_based_features": [
+        "User Registration",
+        "Read Privacy Policy",
+        "Forget Password",
+        "Two-Factor Authentication (2FA)",
+        "Standard Login"
+      ],
+      "2fa_details": {
+        "enabled": {
+          "step_1": "Enter credentials to log in",
+          "step_2": "Receive an OTP via email",
+          "step_3": "Enter OTP to complete login"
+        },
+        "disabled": "Logs in using credentials only"
+      },
+      "forget_password_process": {
+        "step_1": "Request OTP",
+        "step_2": "Enter OTP",
+        "step_3": "Redirect to Change Password page"
+      }
+    },
+    "pricing_plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "Free/Lifetime",
+        "key_features": [
+          "5 Custom Projects",
+          "3 Teamspace Projects",
+          "6 Active University Subjects",
+          "6 Extra Subjects",
+          "10 LLM Summarization Requests/Day",
+          "50 LLM Chat Requests/Day"
+        ]
+      },
+      "standard": {
+        "name": "Standard",
+        "price": "$19.99/month",
+        "key_features": [
+          "15 Custom Projects",
+          "12 Teamspace Projects",
+          "18 Active University Subjects",
+          "18 Extra Subjects",
+          "20 LLM Summarization Requests/Day",
+          "100 LLM Chat Requests/Day"
+        ]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "$49.99/month",
+        "key_features": [
+          "Unlimited Custom Projects",
+          "Unlimited Teamspace Projects",
+          "Unlimited University Subjects",
+          "Unlimited Extra Subjects",
+          "100 LLM Summarization Requests/Day",
+          "500 LLM Chat Requests/Day"
+        ]
+      }
+    },
+    "developer_team": [
+      {
+        "name": "Anila Salman",
+        "role": "Head of UI/UX",
+        "email": "210985students.au.edu.pk"
+      },
+      {
+        "name": "Saleem Talha",
+        "role": "Lead Developer",
+        "email": "210973students.au.edu.pk"
+      },
+      {
+        "name": "Muhammad Saad",
+        "role": "Backend Developer",
+        "email": "210946students.au.edu.pk"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is Cognitive Campus?",
+        "answer": "Cognitive Campus is an advanced student productivity platform that uses AI to enhance learning, project management, and personal organization."
+      },
+      {
+        "question": "How does the AI assistant work?",
+        "answer": "Our Cognitive Assistant provides contextual responses, helps with note summarization, generates AI notes, and can optimize your schedule."
+      },
+      {
+        "question": "Can I upgrade my plan?",
+        "answer": "Yes, you can upgrade from Basic to Standard or Premium plans to access more features and higher limits."
+      }
+    ],
+    "navigation": {
+      "billing_access": "Accessible via menu",
+      "sidebar": [
+        "Dashboard",
+        "Subjects",
+        "Projects",
+        "Notes",
+        "Feedback",
+        "Request"
+      ],
+      "ai_bot_access": {
+        "dashboard_button": true,
+        "footer_button": true
+      },
+      "note_creation": {
+        "footer_plus_button": true
+      },
+      "search_functionality": {
+        "navbar_search": {
+          "description": "Search for content across the platform",
+          "results_page_navigation": "Click on results to navigate to the respective page"
+        }
+      }
+    }
+  }
+  

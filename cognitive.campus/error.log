@@ -1,0 +1,15 @@
+2024-10-16 13:01:58 - Received data: {"token":"tok_1QASB8HLhmdc2fDhGAIQVsSf","plan":"standard"}
+2024-10-16 13:01:58 - Decoded input: Array
+(
+    [token] => tok_1QASB8HLhmdc2fDhGAIQVsSf
+    [plan] => standard
+)
+
+2024-10-16 13:01:58 - Extracted data: Token=tok_1QASB8HLhmdc2fDhGAIQVsSf, Plan=standard, UserEmail=
+2024-10-16 13:01:58 - Error: Missing required fields
+Stack trace: #0 {main}
+2024-10-16 13:01:58 - Unexpected output: <br />
+<b>Deprecated</b>:  Creation of dynamic property Google\Service\Classroom::$serviceName is deprecated in <b>E:\xampp\htdocs\cognitive.campus\vendor\google\apiclient-services\src\Classroom.php</b> on line <b>142</b><br />
+<br />
+<b>Deprecated</b>:  Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in <b>E:\xampp\htdocs\cognitive.campus\vendor\google\apiclient-services\src\Oauth2.php</b> on line <b>67</b><br />
+{"success":false,"error":"Missing required fields"}

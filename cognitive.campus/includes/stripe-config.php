@@ -1,0 +1,4 @@
+<?php
+// Set your Stripe API keys
+define('STRIPE_SECRET_KEY', 'sk_test_51PfqINHLhmdc2fDhiVzRXVMjGG0lGKey0DfPWMioxZqmz9n4mrXgoibWBDDr5qcdD0l33n5sd5mmLpU5asamqWq100CvdPqHF1');
+define('STRIPE_PUBLISHABLE_KEY', 'pk_test_51PfqINHLhmdc2fDh2vx7PPQR6MLYhdk96a6gTCe3NrXW6FEtxoNzNWUdnrcWOEbM8FJO4npJBzdlxRHU5eJ02TLp00Fvzf07zf');

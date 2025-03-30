@@ -1,0 +1,12 @@
+ <div class="assignments-scroll" style="max-height: 200px; overflow-y: auto;">
+                ${course.assignments.length > 0 ? `
+                    <div class="list-group list-group-flush">
+                        ${course.assignments.map(assignment => `
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                ${escapeHtml(assignment.title)}
+                                <span class="badge bg-primary">${assignment.grade}%</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : '<p class="text-muted mb-0 small">No graded assignments</p>'}
+            </div>

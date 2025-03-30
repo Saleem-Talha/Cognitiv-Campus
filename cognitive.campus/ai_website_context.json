@@ -1,0 +1,733 @@
+{
+  "platform_overview": {
+    "name": "Cognitive Campus",
+    "tagline": "Student Productivity Enhancement System using LLM",
+    "mission": "Empowering students with intelligent productivity tools and personalized learning experiences",
+    "description": "An advanced platform that integrates with Google Classroom to help students manage courses, collaborate on projects, take enhanced notes, optimize schedules, and receive AI-powered assistance for improved academic performance."
+  },
+  "core_features": [
+    "Subjects/Courses Management",
+    "Project Collaboration",
+    "Advanced Note-Taking",
+    "Schedule Management",
+    "AI-Powered Assistant",
+    "Comprehensive Dashboard",
+    "Google Classroom Integration",
+    "Task Management",
+    "Grade Tracking",
+    "Team Collaboration",
+    "Student Analytics"
+  ],
+  "auth_system": {
+    "landing_page": {
+      "elements": [
+        "Login button",
+        "Register button",
+        "Google login option",
+        "User feedback showcase",
+        "Platform overview"
+      ]
+    },
+    "types": ["Session-Based Authentication", "Google Authentication"],
+    "registration_process": {
+      "required_fields": [
+        "Username",
+        "Email",
+        "Password",
+        "Confirm password",
+        "Phone number",
+        "Profile picture (optional)",
+        "Terms and conditions agreement checkbox"
+      ],
+      "features": ["View terms and conditions", "Privacy policy access"]
+    },
+    "login_methods": {
+      "standard_login": {
+        "fields": ["Email", "Password"],
+        "features": ["Remember me", "Forget password option"]
+      },
+      "google_login": "Direct authentication using Google account"
+    },
+    "password_recovery": {
+      "forget_password_process": {
+        "step_1": "Request OTP by entering email",
+        "step_2": "Receive OTP via email (valid for 15 minutes)",
+        "step_3": "Enter 6-digit OTP code (3 attempts maximum)",
+        "step_4": "Redirect to Change Password page",
+        "security_features": [
+          "30-minute lockout after 3 failed attempts",
+          "15-minute OTP expiration"
+        ]
+      }
+    },
+    "two_factor_authentication": {
+      "enabled": {
+        "step_1": "Enter credentials to log in",
+        "step_2": "Receive a 6-digit OTP via email",
+        "step_3": "Enter OTP to complete login"
+      },
+      "disabled": "Logs in using credentials only",
+      "management": "Can be enabled/disabled from Profile page"
+    }
+  },
+  "dashboard": {
+    "elements": [
+      {
+        "name": "Quote Banner",
+        "description": "Displays inspirational quotes with a button to access AI Chat"
+      },
+      {
+        "name": "User Statistics Cards",
+        "items": [
+          "Number of university courses",
+          "Number of extra courses",
+          "Number of projects",
+          "Number of course notes",
+          "Number of project notes"
+        ]
+      },
+      {
+        "name": "Project Timeline Visualization",
+        "description": "Graphical representation of branches per project"
+      },
+      {
+        "name": "Calendar View",
+        "description": "Interactive calendar showing tasks, courses, projects, and notes with detailed information on click"
+      },
+      {
+        "name": "Schedules and Calendar Section",
+        "description": "Upload and manage annual university calendar and semester timetable"
+      },
+      {
+        "name": "Todo List",
+        "features": ["Add tasks", "Edit tasks", "Remove tasks", "Mark as complete"]
+      },
+      {
+        "name": "Upcoming Deadlines",
+        "description": "Fetches and displays assignments and quiz deadlines from Google Classroom"
+      },
+      {
+        "name": "My Grades",
+        "description": "Heat map visualization of Google Classroom grades with detailed course-specific views"
+      }
+    ],
+    "navigation": {
+      "search_bar": "Global search functionality for projects, notes, and courses",
+      "sidebar": [
+        "Dashboard",
+        "Subjects",
+        "Projects",
+        "Notes",
+        "Feedback",
+        "Request",
+        "Profile",
+        "Notifications",
+        "Schedules",
+        "Analytics"
+      ]
+    }
+  },
+  "courses_management": {
+    "types": [
+      {
+        "name": "Extra Courses (User Created)",
+        "description": "Custom courses created by users outside of Google Classroom",
+        "features": ["Create", "Delete", "Manage notes", "Course recommendations"]
+      },
+      {
+        "name": "Active Courses (Google Classroom)",
+        "description": "Current semester courses imported from Google Classroom",
+        "features": ["Limited by subscription plan", "Complete access to course materials and announcements"]
+      },
+      {
+        "name": "Inactive Courses",
+        "description": "Default state for imported Google Classroom courses",
+        "features": ["Can be activated based on subscription limits"]
+      }
+    ],
+    "course_details": [
+      {
+        "name": "Teacher Information",
+        "description": "Details about course instructors"
+      },
+      {
+        "name": "GCR Announcements",
+        "description": "Synchronized announcements from Google Classroom"
+      },
+      {
+        "name": "Learning Materials",
+        "description": "Course slides, documents, and resources",
+        "features": ["View", "Download", "Upload"]
+      },
+      {
+        "name": "Coursework",
+        "types": ["Quizzes", "Assignments", "Exams"],
+        "features": ["View details", "Submission tracking", "Deadline notifications"]
+      },
+      {
+        "name": "Personal Notes",
+        "types": ["Assignment Notes", "Quiz Notes", "General Notes"],
+        "features": ["Create", "View", "Edit", "Delete"]
+      }
+    ],
+    "unique_features": [
+      {
+        "name": "Course Activation/Deactivation",
+        "description": "Move courses between active and inactive states based on subscription limits"
+      },
+      {
+        "name": "Coursera Course Recommendations",
+        "description": "AI-powered recommendations based on course name using cosine similarity",
+        "details": ["Shows top 5 recommended courses", "Includes course name, rank, rating, university, and direct link"]
+      }
+    ]
+  },
+  "projects": {
+    "types": [
+      {
+        "name": "Own Projects",
+        "description": "Projects created by the user",
+        "features": ["Full administrative control", "Complete customization"]
+      },
+      {
+        "name": "Teamspace Projects",
+        "description": "Projects where the user is an invited member",
+        "features": ["Collaborative access", "Limited administrative functions"]
+      }
+    ],
+    "project_components": [
+      {
+        "name": "Project Branches",
+        "description": "Organized sections of the project showing progression",
+        "features": ["Chronological ordering", "User attribution", "Description", "Date tracking", "Zip file attachment option", "Add/Delete branches"]
+      },
+      {
+        "name": "User Management",
+        "description": "System for managing project team members",
+        "features": ["View enrolled members", "Add/Remove users (owner only)", "Send email invitations to non-platform users"]
+      },
+      {
+        "name": "Task Assignment",
+        "description": "Workflow for delegating and tracking work",
+        "features": [
+          "Assign tasks to specific users",
+          "Set task details and steps",
+          "Define deadlines",
+          "Progress tracking through completion steps",
+          "Option to create branches during completion"
+        ]
+      },
+      {
+        "name": "Progress Tracking",
+        "description": "Visual representation of task completion status",
+        "features": ["Per-user progress bars", "Step-by-step completion tracking"]
+      },
+      {
+        "name": "Group Chat",
+        "description": "Project-specific communication channel",
+        "features": ["Text messaging", "File sharing", "Image sharing", "Message replies"]
+      },
+      {
+        "name": "README",
+        "description": "Project overview document",
+        "features": ["Editable by all members", "Provides project context and information"]
+      },
+      {
+        "name": "Notice Board",
+        "description": "Important announcements and information",
+        "features": ["Post alerts", "Share important information", "Visible to all project members"]
+      },
+      {
+        "name": "Notes Section",
+        "description": "Project-specific notes repository",
+        "features": ["View", "Create", "Edit", "Delete project notes"]
+      }
+    ],
+    "owner_capabilities": [
+      {
+        "name": "Add/Remove Users",
+        "description": "Manage project membership"
+      },
+      {
+        "name": "Email Invitations",
+        "description": "Invite non-platform users via email",
+        "process": ["Send invitation", "User receives on Request page", "User can accept/decline"]
+      },
+      {
+        "name": "Control Panel Access",
+        "description": "Administrative functions for project management",
+        "features": ["Change project name", "Update project status", "Modify deadlines", "Delete project"]
+      },
+      {
+        "name": "Project Metadata Management",
+        "description": "Manage core project information"
+      }
+    ],
+    "collaboration_features": [
+      {
+        "name": "Zip File Upload",
+        "description": "Attach compressed files to project branches"
+      },
+      {
+        "name": "Branch Uploads",
+        "description": "Add content to specific project sections"
+      },
+      {
+        "name": "Detailed Task Assignment",
+        "description": "Multi-step work delegation system"
+      },
+      {
+        "name": "Progress Bar Tracking",
+        "description": "Visual task completion monitoring"
+      }
+    ],
+    "filtering": {
+      "description": "System to sort and find projects",
+      "criteria": ["Date created", "Last modified", "Status", "Type"]
+    }
+  },
+  "notes_system": {
+    "types": [
+      {
+        "name": "Project Notes",
+        "description": "Notes associated with specific projects",
+        "features": ["Create", "View", "Edit", "Delete"]
+      },
+      {
+        "name": "Subject/Course Notes",
+        "description": "Notes associated with courses",
+        "types": ["Assignment Notes", "Quiz Notes", "General Notes"],
+        "features": ["Create", "View", "Edit", "Delete"]
+      }
+    ],
+    "features": [
+      {
+        "name": "Date-Based Filtering",
+        "description": "Sort notes by creation or modification date"
+      },
+      {
+        "name": "Type-Based Filtering",
+        "description": "Filter notes by project, course, or note type"
+      },
+      {
+        "name": "Rich Text Editing",
+        "description": "Advanced formatting options for notes",
+        "capabilities": [
+          "Word count",
+          "Insert media",
+          "Tables",
+          "Code blocks",
+          "Font customization (size, style, color)",
+          "Text justification"
+        ]
+      },
+      {
+        "name": "Text-to-Speech",
+        "description": "Audio playback of note content"
+      },
+      {
+        "name": "Speech-to-Text",
+        "description": "Voice dictation for note creation"
+      },
+      {
+        "name": "Infinity Canvas",
+        "description": "Visual drawing and diagramming tool",
+        "tools": ["Pen", "Shapes", "Colors", "Undo/Redo", "Drawing insertion into notes"]
+      },
+      {
+        "name": "Auto-Save",
+        "description": "Automatic saving of note content"
+      },
+      {
+        "name": "View Modes",
+        "types": [
+          {
+            "name": "Read Mode",
+            "features": ["Text-to-speech", "Distraction-free viewing"]
+          },
+          {
+            "name": "Edit Mode",
+            "features": ["Full editor functionality", "Drawing tools", "AI features"]
+          }
+        ]
+      },
+      {
+        "name": "AI Note Features",
+        "capabilities": [
+          {
+            "name": "Note Summarization",
+            "description": "AI-generated summary of existing notes"
+          },
+          {
+            "name": "PDF Analysis",
+            "description": "Generate notes from uploaded PDF documents"
+          },
+          {
+            "name": "AI Notes Generation",
+            "description": "Create notes based on user prompts"
+          },
+          {
+            "name": "Image Generation",
+            "description": "Create and insert AI-generated images into notes"
+          }
+        ]
+      },
+      {
+        "name": "Note Recommendations",
+        "description": "AI-suggested notes based on user behavior and content"
+      }
+    ]
+  },
+  "llm_assistant": {
+    "name": "Cognitive Assistant",
+    "interface": {
+      "access_points": [
+        "Dashboard button",
+        "Footer button",
+        "Dedicated chat page"
+      ],
+      "features": [
+        "Chat history",
+        "New chat creation",
+        "Image generation"
+      ]
+    },
+    "modes": [
+      {
+        "name": "Normal Mode",
+        "description": "General-purpose AI using OpenAI's models",
+        "use_cases": ["General questions", "Non-platform specific assistance"]
+      },
+      {
+        "name": "Context Mode",
+        "description": "Platform-aware assistant that can access user data",
+        "use_cases": ["Platform navigation help", "User-specific information", "Feature explanations"]
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "Contextual Responses",
+        "description": "Answers based on platform and user context"
+      },
+      {
+        "name": "General Interactions",
+        "description": "Standard conversational AI capabilities"
+      },
+      {
+        "name": "Note Summarization",
+        "description": "Condense note content into key points"
+      },
+      {
+        "name": "AI Note Generation",
+        "description": "Create notes based on prompts or documents"
+      },
+      {
+        "name": "Schedule Optimization",
+        "description": "Suggest improvements to user study schedules"
+      },
+      {
+        "name": "Image Generation",
+        "description": "Create images based on text prompts"
+      }
+    ],
+    "usage_limits": {
+      "description": "Restrictions based on subscription plan",
+      "metrics": [
+        "Chat requests per day",
+        "Summarization requests per day",
+        "Image generation requests"
+      ]
+    }
+  },
+  "schedules": {
+    "types": [
+      {
+        "name": "Weekly Schedule",
+        "description": "Plan for weekly study and activities"
+      },
+      {
+        "name": "Daily Schedule",
+        "description": "Detailed day-by-day planning"
+      }
+    ],
+    "features": [
+      {
+        "name": "Manual Schedule Creation",
+        "description": "User-defined study time allocation for subjects"
+      },
+      {
+        "name": "AI Schedule Optimizer",
+        "description": "Analyzes current schedule and suggests improvements",
+        "process": ["Schedule analysis", "Summary creation", "Optimization suggestions"]
+      },
+      {
+        "name": "Calendar Management",
+        "description": "Upload and manage academic calendars",
+        "types": ["Annual university calendar", "Semester timetable"]
+      }
+    ]
+  },
+  "notifications": {
+    "categories": [
+      {
+        "name": "Course Notifications",
+        "types": ["New announcements", "Deadline reminders", "Grade updates"]
+      },
+      {
+        "name": "Project Notifications",
+        "types": ["Task assignments", "Deadline reminders", "Updates to branches", "New members", "Chat messages"]
+      },
+      {
+        "name": "Note Notifications",
+        "types": ["Edits", "Shares", "AI processing completions"]
+      },
+      {
+        "name": "System Notifications",
+        "types": ["Billing updates", "Subscription offers", "Project invitations", "Email notifications"]
+      }
+    ],
+    "dedicated_page": {
+      "description": "Central hub for all notifications",
+      "features": ["View all notifications", "Mark as read", "Filter by type"]
+    }
+  },
+  "user_profile": {
+    "features": [
+      {
+        "name": "Profile Information",
+        "editable_fields": ["Username", "Email", "Phone number", "Profile picture"]
+      },
+      {
+        "name": "Security Settings",
+        "options": ["Enable/disable 2FA", "Change password"]
+      },
+      {
+        "name": "Subscription Information",
+        "details": ["Current plan", "Usage statistics", "Upgrade options"]
+      }
+    ]
+  },
+  "search_functionality": {
+    "description": "Global search system accessible from navbar",
+    "searchable_content": [
+      "Projects",
+      "Notes",
+      "Courses",
+      "Tasks",
+      "Announcements"
+    ],
+    "features": [
+      "Real-time results",
+      "Direct navigation to found items",
+      "Filtering options"
+    ]
+  },
+  "student_analytics": {
+    "data_sources": [
+      "Google Classroom grades",
+      "Platform usage statistics",
+      "Task completion rates"
+    ],
+    "features": [
+      "Grade analysis",
+      "Performance trends",
+      "AI-powered improvement suggestions",
+      "Subject-specific insights"
+    ]
+  },
+  "feedback_system": {
+    "user_side": {
+      "description": "System for users to provide platform feedback",
+      "features": ["Submit feedback", "Rate features", "Suggest improvements"]
+    },
+    "admin_side": {
+      "description": "Management system for user feedback",
+      "features": [
+        "View all feedback",
+        "Select feedback for landing page showcase",
+        "Remove feedback from landing page",
+        "Reply to feedback via email"
+      ]
+    }
+  },
+  "requests_page": {
+    "description": "Central hub for invitations and notifications",
+    "features": [
+      "View project invitations",
+      "Accept/decline invitations",
+      "View system notifications"
+    ]
+  },
+  "pricing_plans": {
+    "basic": {
+      "name": "Basic",
+      "price": "Free/Lifetime",
+      "key_features": [
+        "5 Custom Projects",
+        "3 Teamspace Projects",
+        "6 Active University Subjects",
+        "6 Extra Subjects",
+        "10 LLM Summarization Requests/Day",
+        "50 LLM Chat Requests/Day",
+        "Limited image generation"
+      ]
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "$19.99/month",
+      "key_features": [
+        "15 Custom Projects",
+        "12 Teamspace Projects",
+        "18 Active University Subjects",
+        "18 Extra Subjects",
+        "20 LLM Summarization Requests/Day",
+        "100 LLM Chat Requests/Day",
+        "Increased image generation"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$49.99/month",
+      "key_features": [
+        "Unlimited Custom Projects",
+        "Unlimited Teamspace Projects",
+        "Unlimited University Subjects",
+        "Unlimited Extra Subjects",
+        "100 LLM Summarization Requests/Day",
+        "500 LLM Chat Requests/Day",
+        "Full image generation capabilities"
+      ]
+    },
+    "billing_system": {
+      "payment_gateway": "Stripe",
+      "features": [
+        "Plan upgrades",
+        "Payment processing",
+        "Subscription management"
+      ]
+    },
+    "special_offers": {
+      "management": "Admin-created discount offers",
+      "notification": "Email notifications to users about offers",
+      "dedicated_page": "Special offers page for users"
+    }
+  },
+  "admin_system": {
+    "access": {
+      "login": "Secure admin credentials required"
+    },
+    "dashboard": {
+      "elements": [
+        "Recent system logs",
+        "User statistics",
+        "Project statistics",
+        "Feedback statistics"
+      ]
+    },
+    "features": [
+      {
+        "name": "Offers Management",
+        "description": "Create and manage subscription discounts",
+        "capabilities": ["Create offers", "Set discount amounts", "Set validity periods", "Send email notifications"]
+      },
+      {
+        "name": "User Management",
+        "description": "Monitor and manage platform users"
+      },
+      {
+        "name": "Project Monitoring",
+        "description": "View project summaries and track suspicious activities"
+      },
+      {
+        "name": "Course Recommendation Administration",
+        "description": "Manage the recommendation system and user data collection"
+      },
+      {
+        "name": "Feedback Management",
+        "description": "Review, showcase, and respond to user feedback",
+        "capabilities": [
+          "Select feedback for landing page",
+          "Remove feedback from landing page",
+          "Reply to feedback via email"
+        ]
+      }
+    ]
+  },
+  "navigation": {
+    "billing_access": "Accessible via menu",
+    "sidebar": [
+      "Dashboard",
+      "Subjects",
+      "Projects",
+      "Notes",
+      "Feedback",
+      "Request",
+      "Profile",
+      "Notifications",
+      "Schedules",
+      "Analytics"
+    ],
+    "ai_bot_access": {
+      "dashboard_button": true,
+      "footer_button": true,
+      "dedicated_page": true
+    },
+    "note_creation": {
+      "footer_plus_button": true,
+      "notes_page_button": true
+    },
+    "search_functionality": {
+      "navbar_search": {
+        "description": "Search for content across the platform",
+        "results_page_navigation": "Click on results to navigate to the respective page"
+      }
+    }
+  },
+  "developer_team": [
+    {
+      "name": "Anila Salman",
+      "role": "Head of UI/UX",
+      "email": "210985@students.au.edu.pk"
+    },
+    {
+      "name": "Saleem Talha",
+      "role": "Lead Developer",
+      "email": "210973@students.au.edu.pk"
+    },
+    {
+      "name": "Muhammad Saad",
+      "role": "Backend Developer",
+      "email": "210946@students.au.edu.pk"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is Cognitive Campus?",
+      "answer": "Cognitive Campus is an advanced student productivity platform that uses AI to enhance learning, project management, and personal organization. It integrates with Google Classroom to provide a comprehensive academic management system."
+    },
+    {
+      "question": "How does the AI assistant work?",
+      "answer": "Our Cognitive Assistant operates in two modes: Normal Mode for general queries and Context Mode for platform-specific help. It provides contextual responses, helps with note summarization, generates AI notes, optimizes your schedule, and can even generate images based on prompts."
+    },
+    {
+      "question": "Can I upgrade my plan?",
+      "answer": "Yes, you can upgrade from Basic to Standard or Premium plans to access more features and higher limits. Upgrades are processed through our secure Stripe payment gateway."
+    },
+    {
+      "question": "How does Google Classroom integration work?",
+      "answer": "Cognitive Campus automatically imports your Google Classroom courses, announcements, assignments, and grades. You can then activate courses based on your subscription plan limits."
+    },
+    {
+      "question": "What are the project collaboration features?",
+      "answer": "Projects include branches for organization, team member management, task assignment with progress tracking, a dedicated group chat, a README section, a notice board, and project-specific notes."
+    },
+    {
+      "question": "How does two-factor authentication work?",
+      "answer": "When enabled, 2FA sends a 6-digit code to your email after login. You must enter this code to complete authentication. You can enable or disable 2FA from your profile page."
+    },
+    {
+      "question": "What AI features are available for notes?",
+      "answer": "AI features include note summarization, PDF analysis and note generation, prompt-based note creation, and image generation. Usage limits vary by subscription plan."
+    }
+  ]
+}

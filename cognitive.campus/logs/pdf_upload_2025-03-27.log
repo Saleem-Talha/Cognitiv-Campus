@@ -1,0 +1,58 @@
+[2025-03-27 10:16:32] [INFO] PDF upload process started
+[2025-03-27 10:16:32] [INFO] Uploaded file details: Name=Test.pdf, Type=application/pdf, Size=264981
+[2025-03-27 10:16:32] [INFO] File uploaded successfully: uploads/pdfs/pdf_67e51770a353d4.42471355_Test.pdf
+[2025-03-27 10:16:32] [INFO] Initiating PDF summarization script
+[2025-03-27 10:16:35] [INFO] Python script return value: 1
+[2025-03-27 10:16:35] [ERROR] Python script error: 
+[2025-03-27 10:16:35] [ERROR] Failed to generate summary: 
+[2025-03-27 10:22:27] [INFO] PDF upload process started
+[2025-03-27 10:22:27] [INFO] Uploaded file details: Name=Test.pdf, Type=application/pdf, Size=264981
+[2025-03-27 10:22:27] [INFO] File uploaded successfully: uploads/pdfs/pdf_67e518d39a3709.17321618_Test.pdf
+[2025-03-27 10:22:27] [INFO] Initiating PDF summarization script
+[2025-03-27 10:22:33] [INFO] Python script return value: 0
+[2025-03-27 10:22:33] [INFO] Python script output: 2025-03-27 14:22:32,826 [INFO] Processing PDF: uploads/pdfs/pdf_67e518d39a3709.17321618_Test.pdf
+2025-03-27 14:22:32,827 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e518d39a3709.17321618_Test.pdf
+2025-03-27 14:22:32,859 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:22:32,859 [ERROR] OpenAI API key not configured
+2025-03-27 14:22:32,860 [INFO] Generating final JSON response
+{"status": "success", "summary": "OpenAI API key not configured. Set OPENAI_API_KEY environment variable."}
+
+[2025-03-27 10:22:33] [INFO] Python script error: 
+[2025-03-27 10:22:33] [ERROR] JSON parsing error: Syntax error
+[2025-03-27 10:22:33] [ERROR] Invalid response from summarization script
+[2025-03-27 10:29:56] [INFO] PDF upload process started
+[2025-03-27 10:29:56] [INFO] Uploaded file details: Name=Test.pdf, Type=application/pdf, Size=264981
+[2025-03-27 10:29:56] [INFO] File uploaded successfully: uploads/pdfs/pdf_67e51a940dac63.12336930_Test.pdf
+[2025-03-27 10:29:56] [INFO] Initiating PDF summarization script
+[2025-03-27 10:30:03] [INFO] Python script return value: 0
+[2025-03-27 10:30:03] [INFO] Python script output: 2025-03-27 14:29:59,950 [INFO] Processing PDF: uploads/pdfs/pdf_67e51a940dac63.12336930_Test.pdf
+2025-03-27 14:29:59,952 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e51a940dac63.12336930_Test.pdf
+2025-03-27 14:29:59,977 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:30:01,847 [INFO] Preparing to generate summary
+2025-03-27 14:30:01,847 [INFO] Sending text to OpenAI. Truncated length: 687 characters
+2025-03-27 14:30:03,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 14:30:03,280 [INFO] Summary generation successful
+2025-03-27 14:30:03,281 [INFO] Generating final JSON response
+{"status": "success", "text": "Pakistan is a country in South Asia with borders with India, Afghanistan, Iran, and China. It has a diverse culture, rich history, and beautiful natural landscapes like the Karakoram mountain range and cities such as Karachi, Lahore, and Islamabad. Pakistan gained independence from British rule in 1947 and has encountered political and social challenges since. The country is home to various ethnic groups, languages, and religions, with Islam as the predominant faith. Pakistan holds a crucial position in regional politics and has intricate relationships with neighboring countries."}
+
+[2025-03-27 10:30:03] [INFO] Python script error: 
+[2025-03-27 10:30:03] [ERROR] JSON parsing error: Syntax error
+[2025-03-27 10:30:03] [ERROR] Invalid response from summarization script
+[2025-03-27 10:35:15] [INFO] PDF upload process started
+[2025-03-27 10:35:15] [INFO] Uploaded file details: Name=Test.pdf, Type=application/pdf, Size=264981
+[2025-03-27 10:35:15] [INFO] File uploaded successfully: uploads/pdfs/pdf_67e51bd3d99271.12065328_Test.pdf
+[2025-03-27 10:35:15] [INFO] Initiating PDF summarization script
+[2025-03-27 10:35:23] [INFO] Python script return value: 0
+[2025-03-27 10:35:23] [INFO] Python script output: 2025-03-27 14:35:19,363 [INFO] Processing PDF: uploads/pdfs/pdf_67e51bd3d99271.12065328_Test.pdf
+2025-03-27 14:35:19,365 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e51bd3d99271.12065328_Test.pdf
+2025-03-27 14:35:19,391 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:35:21,546 [INFO] Preparing to generate summary
+2025-03-27 14:35:21,546 [INFO] Sending text to OpenAI. Truncated length: 687 characters
+2025-03-27 14:35:23,230 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 14:35:23,239 [INFO] Summary generation successful
+2025-03-27 14:35:23,239 [INFO] Generating final JSON response
+{"status": "success", "text": "Pakistan is a country in South Asia with borders with India, Afghanistan, Iran, and China. It has a diverse culture, rich history, and beautiful natural landscapes, including the Karakoram mountain range and cities like Karachi, Lahore, and Islamabad. Pakistan gained independence from British rule in 1947 and has faced political and social challenges since. The country is home to various ethnic groups, languages, and religions, with Islam being the predominant faith. Pakistan plays a crucial role in regional politics and has complex relationships with neighboring countries."}
+
+[2025-03-27 10:35:23] [INFO] Python script error: 
+[2025-03-27 10:35:23] [ERROR] JSON parsing error: Syntax error
+[2025-03-27 10:35:23] [ERROR] Invalid response from summarization script

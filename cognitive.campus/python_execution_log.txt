@@ -1,0 +1,1377 @@
+Executed Command: python ""E:\xampp\htdocs\cognitive.campus\admin-behavior-recommendation-modal.py"" 2>&1
+Output: Debug: Total notes found: 19
+Debug: course_note_8 - Content length: 48
+Debug: course_note_10 - Content length: 40
+Debug: course_note_13 - Content length: 436
+Debug: course_note_14 - Content length: 392
+Debug: course_note_16 - Content length: 50
+Debug: course_note_17 - Content length: 3251
+Debug: course_note_22 - Content length: 859
+Debug: course_note_24 - Content length: 49
+Debug: course_note_26 - Content length: 23
+Debug: course_note_27 - Content length: 829
+Debug: course_note_28 - Content length: 779
+Debug: project_note_6 - Content length: 3837
+Debug: project_note_9 - Content length: 776
+Debug: project_note_12 - Content length: 77
+Debug: project_note_17 - Content length: 39
+Debug: project_note_18 - Content length: 2157
+Debug: project_note_19 - Content length: 8
+Debug: project_note_20 - Content length: 57
+Debug: project_note_21 - Content length: 600
+Found 19 notes:
+- course_note_8
+- course_note_10
+- course_note_13
+- course_note_14
+- course_note_16
+- course_note_17
+- course_note_22
+- course_note_24
+- course_note_26
+- course_note_27
+- course_note_28
+- project_note_6
+- project_note_9
+- project_note_12
+- project_note_17
+- project_note_18
+- project_note_19
+- project_note_20
+- project_note_21
+
+Generating recommendations for: course_note_8
+
+Recommendation #1:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.1027
+
+Recommendation #2:
+Course: Building Web Applications in PHP
+Similarity Score: 0.0905
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0699
+
+Recommendation #4:
+Course: Fashion E-Commerce in XD
+Similarity Score: 0.0437
+
+Recommendation #5:
+Course: Geo-Visualization in Python
+Similarity Score: 0.0369
+
+Generating recommendations for: course_note_10
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1295
+
+Recommendation #2:
+Course: C++ For C Programmers, Part B
+Similarity Score: 0.0829
+
+Recommendation #3:
+Course: Responsive Web Design
+Similarity Score: 0.0804
+
+Recommendation #4:
+Course: Game-Theoretic Solution Concept with Spread Sheets
+Similarity Score: 0.0621
+
+Recommendation #5:
+Course: Graphic Design
+Similarity Score: 0.0618
+
+Generating recommendations for: course_note_13
+
+Recommendation #1:
+Course: Introduction to Structured Query Language (SQL)
+Similarity Score: 0.1751
+
+Recommendation #2:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.1748
+
+Recommendation #3:
+Course: Database Design with SQL Server Management Studio (SSMS)
+Similarity Score: 0.1649
+
+Recommendation #4:
+Course: Intermediate Relational Database and SQL
+Similarity Score: 0.1631
+
+Recommendation #5:
+Course: Advanced Relational Database and SQL
+Similarity Score: 0.1520
+
+Generating recommendations for: course_note_14
+
+Recommendation #1:
+Course: Building Web Applications in PHP
+Similarity Score: 0.1002
+
+Recommendation #2:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.0863
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0587
+
+Recommendation #4:
+Skipping problematic row due to error: 'charmap' codec can't encode character '\ufffd' in position 46: character maps to <undefined>
+
+Recommendation #5:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.0532
+
+Generating recommendations for: course_note_16
+
+Recommendation #1:
+Course: Encryption And Decryption Using C++
+Similarity Score: 0.2689
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1438
+
+Recommendation #3:
+Course: IT Security: Defense against the digital dark arts
+Similarity Score: 0.1205
+
+Recommendation #4:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Recommendation #5:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Generating recommendations for: course_note_17
+
+Recommendation #1:
+Course: Organising an Empire: The Assyrian Way
+Similarity Score: 0.2412
+
+Recommendation #2:
+Course: Roman Art and Archaeology
+Similarity Score: 0.2054
+
+Recommendation #3:
+Course: Roman Architecture
+Similarity Score: 0.1516
+
+Recommendation #4:
+Course: Arch of Titus: Rome and the Menorah
+Similarity Score: 0.1360
+
+Recommendation #5:
+Course: The Changing Landscape of Ancient Rome. Archaeology and History of the Palatine Hill
+Similarity Score: 0.1017
+
+Generating recommendations for: course_note_22
+
+Recommendation #1:
+Course: Leading Teams
+Similarity Score: 0.1228
+
+Recommendation #2:
+Course: Sport Sponsorship. Let them Play
+Similarity Score: 0.1173
+
+Recommendation #3:
+Course: Building a Data Science Team
+Similarity Score: 0.1042
+
+Recommendation #4:
+Course: Inspiring and Motivating Individuals
+Similarity Score: 0.0941
+
+Recommendation #5:
+Course: Sports Marketing
+Similarity Score: 0.0869
+
+Generating recommendations for: course_note_24
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1599
+
+Recommendation #2:
+Course: Portfolio Diversification using Correlation Matrix
+Similarity Score: 0.1452
+
+Recommendation #3:
+Course: Matrix Factorization and Advanced Techniques
+Similarity Score: 0.1291
+
+Recommendation #4:
+Course: Matrix Methods
+Similarity Score: 0.1082
+
+Recommendation #5:
+Course: Matrix Algebra for Engineers
+Similarity Score: 0.1056
+
+Generating recommendations for: course_note_26
+
+Recommendation #1:
+Course: A Crash Course in Data Science
+Similarity Score: 0.4138
+
+Recommendation #2:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #3:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #4:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #5:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Generating recommendations for: course_note_27
+
+Recommendation #1:
+Course: Introduction to Python
+Similarity Score: 0.3005
+
+Recommendation #2:
+Course: Create Your First Web App with Python and Flask
+Similarity Score: 0.3005
+
+Recommendation #3:
+Course: Python Data Analysis
+Similarity Score: 0.2928
+
+Recommendation #4:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Recommendation #5:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Generating recommendations for: course_note_28
+
+Recommendation #1:
+Course: Agile Software Development
+Similarity Score: 0.5387
+
+Recommendation #2:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #3:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #4:
+Course: Software Processes and Agile Practices
+Similarity Score: 0.4057
+
+Recommendation #5:
+Course: Agile with Atlassian Jira
+Similarity Score: 0.3757
+
+Generating recommendations for: project_note_6
+
+Recommendation #1:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #2:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #3:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #4:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #5:
+Course: AI For Everyone
+Similarity Score: 0.2562
+
+Generating recommendations for: project_note_9
+
+Recommendation #1:
+Course: Build Your First React Website
+Similarity Score: 0.2557
+
+Recommendation #2:
+Course: Front-End Web Development with React
+Similarity Score: 0.2165
+
+Recommendation #3:
+Course: Multiplatform Mobile App Development with React Native
+Similarity Score: 0.2062
+
+Recommendation #4:
+Course: Build Your First React Website (Part II)
+Similarity Score: 0.2052
+
+Recommendation #5:
+Course: Build a mobile app with Google Sheets on Glide and no coding
+Similarity Score: 0.2007
+
+Generating recommendations for: project_note_12
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.1141
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1073
+
+Recommendation #3:
+Course: Academic Listening and Note-Taking
+Similarity Score: 0.0913
+
+Recommendation #4:
+Course: Black-box and White-box Testing
+Similarity Score: 0.0909
+
+Recommendation #5:
+Course: Introduction to Software Testing
+Similarity Score: 0.0772
+
+Generating recommendations for: project_note_17
+
+Recommendation #1:
+Course: The Manager's Toolkit: A Practical Guide to Managing People at Work
+Similarity Score: 0.1466
+
+Recommendation #2:
+Course: Business Operations Support in Google Sheets
+Similarity Score: 0.0903
+
+Recommendation #3:
+Course: Create a Visual Schedule with Google Slides
+Similarity Score: 0.0884
+
+Recommendation #4:
+Course: Guidance to Keep Newborn Babies Safe and Healthy
+Similarity Score: 0.0619
+
+Recommendation #5:
+Course: Smart Device & Mobile Emerging Technologies
+Similarity Score: 0.0600
+
+Generating recommendations for: project_note_18
+
+Recommendation #1:
+Course: Designing Your Personal Weight Loss Plan
+Similarity Score: 0.1495
+
+Recommendation #2:
+Course: Weight Management: Beyond Balancing Calories
+Similarity Score: 0.1207
+
+Recommendation #3:
+Course: Building Similarity Based Recommendation System
+Similarity Score: 0.1185
+
+Recommendation #4:
+Course: Basic Modeling for Discrete Optimization
+Similarity Score: 0.1170
+
+Recommendation #5:
+Course: Creating Advanced Reports with SAS Visual Analytics
+Similarity Score: 0.1166
+
+Generating recommendations for: project_note_19
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.5712
+
+Recommendation #2:
+Course: Black-box and White-box Testing
+Similarity Score: 0.4552
+
+Recommendation #3:
+Course: Introduction to Software Testing
+Similarity Score: 0.3865
+
+Recommendation #4:
+Course: Introduction to Automated Analysis
+Similarity Score: 0.3590
+
+Recommendation #5:
+Course: Hypothesis Testing in Public Health
+Similarity Score: 0.3316
+
+Generating recommendations for: project_note_20
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1602
+
+Recommendation #2:
+Course: Capstone - Launch Your Own Business!
+Similarity Score: 0.1422
+
+Recommendation #3:
+Course: Launch Strategy: 5 Steps to Capstone Experience
+Similarity Score: 0.1417
+
+Recommendation #4:
+Course: Business English: Final Project
+Similarity Score: 0.1416
+
+Recommendation #5:
+Course: Initiating and Planning Projects
+Similarity Score: 0.1138
+
+Generating recommendations for: project_note_21
+
+Recommendation #1:
+Course: Sports and Society
+Similarity Score: 0.4911
+
+Recommendation #2:
+Course: Sports Marketing
+Similarity Score: 0.3373
+
+Recommendation #3:
+Course: International Entertainment and Sports Marketing
+Similarity Score: 0.3166
+
+Recommendation #4:
+Course: Becoming a Sports Agent
+Similarity Score: 0.3108
+
+Recommendation #5:
+Course: Math behind Moneyball
+Similarity Score: 0.2790
+Successfully saved recommendations to database!
+Executed Command: python ""E:\xampp\htdocs\cognitive.campus\admin-behavior-recommendation-modal.py"" 2>&1
+Output: Debug: Total notes found: 19
+Debug: course_note_8 - Content length: 48
+Debug: course_note_10 - Content length: 40
+Debug: course_note_13 - Content length: 436
+Debug: course_note_14 - Content length: 392
+Debug: course_note_16 - Content length: 50
+Debug: course_note_17 - Content length: 3251
+Debug: course_note_22 - Content length: 859
+Debug: course_note_24 - Content length: 49
+Debug: course_note_26 - Content length: 23
+Debug: course_note_27 - Content length: 829
+Debug: course_note_28 - Content length: 779
+Debug: project_note_6 - Content length: 3837
+Debug: project_note_9 - Content length: 776
+Debug: project_note_12 - Content length: 77
+Debug: project_note_17 - Content length: 39
+Debug: project_note_18 - Content length: 2157
+Debug: project_note_19 - Content length: 8
+Debug: project_note_20 - Content length: 57
+Debug: project_note_21 - Content length: 600
+Found 19 notes:
+- course_note_8
+- course_note_10
+- course_note_13
+- course_note_14
+- course_note_16
+- course_note_17
+- course_note_22
+- course_note_24
+- course_note_26
+- course_note_27
+- course_note_28
+- project_note_6
+- project_note_9
+- project_note_12
+- project_note_17
+- project_note_18
+- project_note_19
+- project_note_20
+- project_note_21
+
+Generating recommendations for: course_note_8
+
+Recommendation #1:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.1027
+
+Recommendation #2:
+Course: Building Web Applications in PHP
+Similarity Score: 0.0905
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0699
+
+Recommendation #4:
+Course: Fashion E-Commerce in XD
+Similarity Score: 0.0437
+
+Recommendation #5:
+Course: Geo-Visualization in Python
+Similarity Score: 0.0369
+
+Generating recommendations for: course_note_10
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1295
+
+Recommendation #2:
+Course: C++ For C Programmers, Part B
+Similarity Score: 0.0829
+
+Recommendation #3:
+Course: Responsive Web Design
+Similarity Score: 0.0804
+
+Recommendation #4:
+Course: Game-Theoretic Solution Concept with Spread Sheets
+Similarity Score: 0.0621
+
+Recommendation #5:
+Course: Graphic Design
+Similarity Score: 0.0618
+
+Generating recommendations for: course_note_13
+
+Recommendation #1:
+Course: Introduction to Structured Query Language (SQL)
+Similarity Score: 0.1751
+
+Recommendation #2:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.1748
+
+Recommendation #3:
+Course: Database Design with SQL Server Management Studio (SSMS)
+Similarity Score: 0.1649
+
+Recommendation #4:
+Course: Intermediate Relational Database and SQL
+Similarity Score: 0.1631
+
+Recommendation #5:
+Course: Advanced Relational Database and SQL
+Similarity Score: 0.1520
+
+Generating recommendations for: course_note_14
+
+Recommendation #1:
+Course: Building Web Applications in PHP
+Similarity Score: 0.1002
+
+Recommendation #2:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.0863
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0587
+
+Recommendation #4:
+Skipping problematic row due to error: 'charmap' codec can't encode character '\ufffd' in position 46: character maps to <undefined>
+
+Recommendation #5:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.0532
+
+Generating recommendations for: course_note_16
+
+Recommendation #1:
+Course: Encryption And Decryption Using C++
+Similarity Score: 0.2689
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1438
+
+Recommendation #3:
+Course: IT Security: Defense against the digital dark arts
+Similarity Score: 0.1205
+
+Recommendation #4:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Recommendation #5:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Generating recommendations for: course_note_17
+
+Recommendation #1:
+Course: Organising an Empire: The Assyrian Way
+Similarity Score: 0.2412
+
+Recommendation #2:
+Course: Roman Art and Archaeology
+Similarity Score: 0.2054
+
+Recommendation #3:
+Course: Roman Architecture
+Similarity Score: 0.1516
+
+Recommendation #4:
+Course: Arch of Titus: Rome and the Menorah
+Similarity Score: 0.1360
+
+Recommendation #5:
+Course: The Changing Landscape of Ancient Rome. Archaeology and History of the Palatine Hill
+Similarity Score: 0.1017
+
+Generating recommendations for: course_note_22
+
+Recommendation #1:
+Course: Leading Teams
+Similarity Score: 0.1228
+
+Recommendation #2:
+Course: Sport Sponsorship. Let them Play
+Similarity Score: 0.1173
+
+Recommendation #3:
+Course: Building a Data Science Team
+Similarity Score: 0.1042
+
+Recommendation #4:
+Course: Inspiring and Motivating Individuals
+Similarity Score: 0.0941
+
+Recommendation #5:
+Course: Sports Marketing
+Similarity Score: 0.0869
+
+Generating recommendations for: course_note_24
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1599
+
+Recommendation #2:
+Course: Portfolio Diversification using Correlation Matrix
+Similarity Score: 0.1452
+
+Recommendation #3:
+Course: Matrix Factorization and Advanced Techniques
+Similarity Score: 0.1291
+
+Recommendation #4:
+Course: Matrix Methods
+Similarity Score: 0.1082
+
+Recommendation #5:
+Course: Matrix Algebra for Engineers
+Similarity Score: 0.1056
+
+Generating recommendations for: course_note_26
+
+Recommendation #1:
+Course: A Crash Course in Data Science
+Similarity Score: 0.4138
+
+Recommendation #2:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #3:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #4:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #5:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Generating recommendations for: course_note_27
+
+Recommendation #1:
+Course: Introduction to Python
+Similarity Score: 0.3005
+
+Recommendation #2:
+Course: Create Your First Web App with Python and Flask
+Similarity Score: 0.3005
+
+Recommendation #3:
+Course: Python Data Analysis
+Similarity Score: 0.2928
+
+Recommendation #4:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Recommendation #5:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Generating recommendations for: course_note_28
+
+Recommendation #1:
+Course: Agile Software Development
+Similarity Score: 0.5387
+
+Recommendation #2:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #3:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #4:
+Course: Software Processes and Agile Practices
+Similarity Score: 0.4057
+
+Recommendation #5:
+Course: Agile with Atlassian Jira
+Similarity Score: 0.3757
+
+Generating recommendations for: project_note_6
+
+Recommendation #1:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #2:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #3:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #4:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #5:
+Course: AI For Everyone
+Similarity Score: 0.2562
+
+Generating recommendations for: project_note_9
+
+Recommendation #1:
+Course: Build Your First React Website
+Similarity Score: 0.2557
+
+Recommendation #2:
+Course: Front-End Web Development with React
+Similarity Score: 0.2165
+
+Recommendation #3:
+Course: Multiplatform Mobile App Development with React Native
+Similarity Score: 0.2062
+
+Recommendation #4:
+Course: Build Your First React Website (Part II)
+Similarity Score: 0.2052
+
+Recommendation #5:
+Course: Build a mobile app with Google Sheets on Glide and no coding
+Similarity Score: 0.2007
+
+Generating recommendations for: project_note_12
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.1141
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1073
+
+Recommendation #3:
+Course: Academic Listening and Note-Taking
+Similarity Score: 0.0913
+
+Recommendation #4:
+Course: Black-box and White-box Testing
+Similarity Score: 0.0909
+
+Recommendation #5:
+Course: Introduction to Software Testing
+Similarity Score: 0.0772
+
+Generating recommendations for: project_note_17
+
+Recommendation #1:
+Course: The Manager's Toolkit: A Practical Guide to Managing People at Work
+Similarity Score: 0.1466
+
+Recommendation #2:
+Course: Business Operations Support in Google Sheets
+Similarity Score: 0.0903
+
+Recommendation #3:
+Course: Create a Visual Schedule with Google Slides
+Similarity Score: 0.0884
+
+Recommendation #4:
+Course: Guidance to Keep Newborn Babies Safe and Healthy
+Similarity Score: 0.0619
+
+Recommendation #5:
+Course: Smart Device & Mobile Emerging Technologies
+Similarity Score: 0.0600
+
+Generating recommendations for: project_note_18
+
+Recommendation #1:
+Course: Designing Your Personal Weight Loss Plan
+Similarity Score: 0.1495
+
+Recommendation #2:
+Course: Weight Management: Beyond Balancing Calories
+Similarity Score: 0.1207
+
+Recommendation #3:
+Course: Building Similarity Based Recommendation System
+Similarity Score: 0.1185
+
+Recommendation #4:
+Course: Basic Modeling for Discrete Optimization
+Similarity Score: 0.1170
+
+Recommendation #5:
+Course: Creating Advanced Reports with SAS Visual Analytics
+Similarity Score: 0.1166
+
+Generating recommendations for: project_note_19
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.5712
+
+Recommendation #2:
+Course: Black-box and White-box Testing
+Similarity Score: 0.4552
+
+Recommendation #3:
+Course: Introduction to Software Testing
+Similarity Score: 0.3865
+
+Recommendation #4:
+Course: Introduction to Automated Analysis
+Similarity Score: 0.3590
+
+Recommendation #5:
+Course: Hypothesis Testing in Public Health
+Similarity Score: 0.3316
+
+Generating recommendations for: project_note_20
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1602
+
+Recommendation #2:
+Course: Capstone - Launch Your Own Business!
+Similarity Score: 0.1422
+
+Recommendation #3:
+Course: Launch Strategy: 5 Steps to Capstone Experience
+Similarity Score: 0.1417
+
+Recommendation #4:
+Course: Business English: Final Project
+Similarity Score: 0.1416
+
+Recommendation #5:
+Course: Initiating and Planning Projects
+Similarity Score: 0.1138
+
+Generating recommendations for: project_note_21
+
+Recommendation #1:
+Course: Sports and Society
+Similarity Score: 0.4911
+
+Recommendation #2:
+Course: Sports Marketing
+Similarity Score: 0.3373
+
+Recommendation #3:
+Course: International Entertainment and Sports Marketing
+Similarity Score: 0.3166
+
+Recommendation #4:
+Course: Becoming a Sports Agent
+Similarity Score: 0.3108
+
+Recommendation #5:
+Course: Math behind Moneyball
+Similarity Score: 0.2790
+Successfully saved recommendations to database!
+Executed Command: python ""E:\xampp\htdocs\cognitive.campus\admin-behavior-recommendation-modal.py"" 2>&1
+Output: Debug: Total notes found: 19
+Debug: course_note_8 - Content length: 48
+Debug: course_note_10 - Content length: 40
+Debug: course_note_13 - Content length: 436
+Debug: course_note_14 - Content length: 392
+Debug: course_note_16 - Content length: 50
+Debug: course_note_17 - Content length: 3251
+Debug: course_note_22 - Content length: 859
+Debug: course_note_24 - Content length: 49
+Debug: course_note_26 - Content length: 23
+Debug: course_note_27 - Content length: 829
+Debug: course_note_28 - Content length: 779
+Debug: project_note_6 - Content length: 3837
+Debug: project_note_9 - Content length: 776
+Debug: project_note_12 - Content length: 77
+Debug: project_note_17 - Content length: 39
+Debug: project_note_18 - Content length: 2157
+Debug: project_note_19 - Content length: 8
+Debug: project_note_20 - Content length: 57
+Debug: project_note_21 - Content length: 600
+Found 19 notes:
+- course_note_8
+- course_note_10
+- course_note_13
+- course_note_14
+- course_note_16
+- course_note_17
+- course_note_22
+- course_note_24
+- course_note_26
+- course_note_27
+- course_note_28
+- project_note_6
+- project_note_9
+- project_note_12
+- project_note_17
+- project_note_18
+- project_note_19
+- project_note_20
+- project_note_21
+
+Generating recommendations for: course_note_8
+
+Recommendation #1:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.1027
+
+Recommendation #2:
+Course: Building Web Applications in PHP
+Similarity Score: 0.0905
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0699
+
+Recommendation #4:
+Course: Fashion E-Commerce in XD
+Similarity Score: 0.0437
+
+Recommendation #5:
+Course: Geo-Visualization in Python
+Similarity Score: 0.0369
+
+Generating recommendations for: course_note_10
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1295
+
+Recommendation #2:
+Course: C++ For C Programmers, Part B
+Similarity Score: 0.0829
+
+Recommendation #3:
+Course: Responsive Web Design
+Similarity Score: 0.0804
+
+Recommendation #4:
+Course: Game-Theoretic Solution Concept with Spread Sheets
+Similarity Score: 0.0621
+
+Recommendation #5:
+Course: Graphic Design
+Similarity Score: 0.0618
+
+Generating recommendations for: course_note_13
+
+Recommendation #1:
+Course: Introduction to Structured Query Language (SQL)
+Similarity Score: 0.1751
+
+Recommendation #2:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.1748
+
+Recommendation #3:
+Course: Database Design with SQL Server Management Studio (SSMS)
+Similarity Score: 0.1649
+
+Recommendation #4:
+Course: Intermediate Relational Database and SQL
+Similarity Score: 0.1631
+
+Recommendation #5:
+Course: Advanced Relational Database and SQL
+Similarity Score: 0.1520
+
+Generating recommendations for: course_note_14
+
+Recommendation #1:
+Course: Building Web Applications in PHP
+Similarity Score: 0.1002
+
+Recommendation #2:
+Course: Building a Dynamic Web App using PHP & MySQL
+Similarity Score: 0.0863
+
+Recommendation #3:
+Course: JavaScript, jQuery, and JSON
+Similarity Score: 0.0587
+
+Recommendation #4:
+Skipping problematic row due to error: 'charmap' codec can't encode character '\ufffd' in position 46: character maps to <undefined>
+
+Recommendation #5:
+Course: Querying Databases Using SQL SELECT statement
+Similarity Score: 0.0532
+
+Generating recommendations for: course_note_16
+
+Recommendation #1:
+Course: Encryption And Decryption Using C++
+Similarity Score: 0.2689
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1438
+
+Recommendation #3:
+Course: IT Security: Defense against the digital dark arts
+Similarity Score: 0.1205
+
+Recommendation #4:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Recommendation #5:
+Course: Cybersecurity Compliance Framework & System Administration
+Similarity Score: 0.0989
+
+Generating recommendations for: course_note_17
+
+Recommendation #1:
+Course: Organising an Empire: The Assyrian Way
+Similarity Score: 0.2412
+
+Recommendation #2:
+Course: Roman Art and Archaeology
+Similarity Score: 0.2054
+
+Recommendation #3:
+Course: Roman Architecture
+Similarity Score: 0.1516
+
+Recommendation #4:
+Course: Arch of Titus: Rome and the Menorah
+Similarity Score: 0.1360
+
+Recommendation #5:
+Course: The Changing Landscape of Ancient Rome. Archaeology and History of the Palatine Hill
+Similarity Score: 0.1017
+
+Generating recommendations for: course_note_22
+
+Recommendation #1:
+Course: Leading Teams
+Similarity Score: 0.1228
+
+Recommendation #2:
+Course: Sport Sponsorship. Let them Play
+Similarity Score: 0.1173
+
+Recommendation #3:
+Course: Building a Data Science Team
+Similarity Score: 0.1042
+
+Recommendation #4:
+Course: Inspiring and Motivating Individuals
+Similarity Score: 0.0941
+
+Recommendation #5:
+Course: Sports Marketing
+Similarity Score: 0.0869
+
+Generating recommendations for: course_note_24
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1599
+
+Recommendation #2:
+Course: Portfolio Diversification using Correlation Matrix
+Similarity Score: 0.1452
+
+Recommendation #3:
+Course: Matrix Factorization and Advanced Techniques
+Similarity Score: 0.1291
+
+Recommendation #4:
+Course: Matrix Methods
+Similarity Score: 0.1082
+
+Recommendation #5:
+Course: Matrix Algebra for Engineers
+Similarity Score: 0.1056
+
+Generating recommendations for: course_note_26
+
+Recommendation #1:
+Course: A Crash Course in Data Science
+Similarity Score: 0.4138
+
+Recommendation #2:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #3:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #4:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Recommendation #5:
+Course: What is Data Science?
+Similarity Score: 0.4035
+
+Generating recommendations for: course_note_27
+
+Recommendation #1:
+Course: Introduction to Python
+Similarity Score: 0.3005
+
+Recommendation #2:
+Course: Create Your First Web App with Python and Flask
+Similarity Score: 0.3005
+
+Recommendation #3:
+Course: Python Data Analysis
+Similarity Score: 0.2928
+
+Recommendation #4:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Recommendation #5:
+Course: Python for Data Science and AI
+Similarity Score: 0.2847
+
+Generating recommendations for: course_note_28
+
+Recommendation #1:
+Course: Agile Software Development
+Similarity Score: 0.5387
+
+Recommendation #2:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #3:
+Course: Managing an Agile Team
+Similarity Score: 0.4620
+
+Recommendation #4:
+Course: Software Processes and Agile Practices
+Similarity Score: 0.4057
+
+Recommendation #5:
+Course: Agile with Atlassian Jira
+Similarity Score: 0.3757
+
+Generating recommendations for: project_note_6
+
+Recommendation #1:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #2:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #3:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #4:
+Course: Introduction to Artificial Intelligence (AI)
+Similarity Score: 0.2728
+
+Recommendation #5:
+Course: AI For Everyone
+Similarity Score: 0.2562
+
+Generating recommendations for: project_note_9
+
+Recommendation #1:
+Course: Build Your First React Website
+Similarity Score: 0.2557
+
+Recommendation #2:
+Course: Front-End Web Development with React
+Similarity Score: 0.2165
+
+Recommendation #3:
+Course: Multiplatform Mobile App Development with React Native
+Similarity Score: 0.2062
+
+Recommendation #4:
+Course: Build Your First React Website (Part II)
+Similarity Score: 0.2052
+
+Recommendation #5:
+Course: Build a mobile app with Google Sheets on Glide and no coding
+Similarity Score: 0.2007
+
+Generating recommendations for: project_note_12
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.1141
+
+Recommendation #2:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1073
+
+Recommendation #3:
+Course: Academic Listening and Note-Taking
+Similarity Score: 0.0913
+
+Recommendation #4:
+Course: Black-box and White-box Testing
+Similarity Score: 0.0909
+
+Recommendation #5:
+Course: Introduction to Software Testing
+Similarity Score: 0.0772
+
+Generating recommendations for: project_note_17
+
+Recommendation #1:
+Course: The Manager's Toolkit: A Practical Guide to Managing People at Work
+Similarity Score: 0.1466
+
+Recommendation #2:
+Course: Business Operations Support in Google Sheets
+Similarity Score: 0.0903
+
+Recommendation #3:
+Course: Create a Visual Schedule with Google Slides
+Similarity Score: 0.0884
+
+Recommendation #4:
+Course: Guidance to Keep Newborn Babies Safe and Healthy
+Similarity Score: 0.0619
+
+Recommendation #5:
+Course: Smart Device & Mobile Emerging Technologies
+Similarity Score: 0.0600
+
+Generating recommendations for: project_note_18
+
+Recommendation #1:
+Course: Designing Your Personal Weight Loss Plan
+Similarity Score: 0.1495
+
+Recommendation #2:
+Course: Weight Management: Beyond Balancing Calories
+Similarity Score: 0.1207
+
+Recommendation #3:
+Course: Building Similarity Based Recommendation System
+Similarity Score: 0.1185
+
+Recommendation #4:
+Course: Basic Modeling for Discrete Optimization
+Similarity Score: 0.1170
+
+Recommendation #5:
+Course: Creating Advanced Reports with SAS Visual Analytics
+Similarity Score: 0.1166
+
+Generating recommendations for: project_note_19
+
+Recommendation #1:
+Course: Web and Mobile Testing with Selenium
+Similarity Score: 0.5712
+
+Recommendation #2:
+Course: Black-box and White-box Testing
+Similarity Score: 0.4552
+
+Recommendation #3:
+Course: Introduction to Software Testing
+Similarity Score: 0.3865
+
+Recommendation #4:
+Course: Introduction to Automated Analysis
+Similarity Score: 0.3590
+
+Recommendation #5:
+Course: Hypothesis Testing in Public Health
+Similarity Score: 0.3316
+
+Generating recommendations for: project_note_20
+
+Recommendation #1:
+Course: Create a Financial Statement using Google Sheets
+Similarity Score: 0.1602
+
+Recommendation #2:
+Course: Capstone - Launch Your Own Business!
+Similarity Score: 0.1422
+
+Recommendation #3:
+Course: Launch Strategy: 5 Steps to Capstone Experience
+Similarity Score: 0.1417
+
+Recommendation #4:
+Course: Business English: Final Project
+Similarity Score: 0.1416
+
+Recommendation #5:
+Course: Initiating and Planning Projects
+Similarity Score: 0.1138
+
+Generating recommendations for: project_note_21
+
+Recommendation #1:
+Course: Sports and Society
+Similarity Score: 0.4911
+
+Recommendation #2:
+Course: Sports Marketing
+Similarity Score: 0.3373
+
+Recommendation #3:
+Course: International Entertainment and Sports Marketing
+Similarity Score: 0.3166
+
+Recommendation #4:
+Course: Becoming a Sports Agent
+Similarity Score: 0.3108
+
+Recommendation #5:
+Course: Math behind Moneyball
+Similarity Score: 0.2790
+Successfully saved recommendations to database!

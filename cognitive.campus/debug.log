@@ -1,0 +1,8 @@
+2024-10-16 13:00:15 - Received data: {"token":"tok_1QAS9THLhmdc2fDh0JMviJho","plan":"standard"}
+2024-10-16 13:00:15 - Decoded input: Array
+(
+    [token] => tok_1QAS9THLhmdc2fDh0JMviJho
+    [plan] => standard
+)
+
+2024-10-16 13:00:15 - Extracted data: Token=tok_1QAS9THLhmdc2fDh0JMviJho, Plan=standard, UserEmail=saleemtalha967@gmail.com

@@ -1,0 +1,35 @@
+2025-03-27 14:16:35,354 [ERROR] Import Error: No module named 'PyPDF2'. Please install required libraries.
+2025-03-27 14:22:32,826 [INFO] Processing PDF: uploads/pdfs/pdf_67e518d39a3709.17321618_Test.pdf
+2025-03-27 14:22:32,827 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e518d39a3709.17321618_Test.pdf
+2025-03-27 14:22:32,859 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:22:32,859 [ERROR] OpenAI API key not configured
+2025-03-27 14:22:32,860 [INFO] Generating final JSON response
+2025-03-27 14:24:37,976 [INFO] Processing PDF: C:\Users\HP\Desktop\Test.pdf
+2025-03-27 14:24:37,977 [INFO] Extracting text from PDF: C:\Users\HP\Desktop\Test.pdf
+2025-03-27 14:24:37,990 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:24:37,998 [ERROR] OpenAI API key not configured
+2025-03-27 14:24:37,999 [INFO] Generating final JSON response
+2025-03-27 14:27:52,771 [INFO] Processing PDF: C:\Users\HP\Desktop\Test.pdf
+2025-03-27 14:27:52,773 [INFO] Extracting text from PDF: C:\Users\HP\Desktop\Test.pdf
+2025-03-27 14:27:52,813 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:27:57,793 [INFO] Preparing to generate summary
+2025-03-27 14:27:57,794 [INFO] Sending text to OpenAI. Truncated length: 687 characters
+2025-03-27 14:28:00,145 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 14:28:00,165 [INFO] Summary generation successful
+2025-03-27 14:28:00,167 [INFO] Generating final JSON response
+2025-03-27 14:29:59,950 [INFO] Processing PDF: uploads/pdfs/pdf_67e51a940dac63.12336930_Test.pdf
+2025-03-27 14:29:59,952 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e51a940dac63.12336930_Test.pdf
+2025-03-27 14:29:59,977 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:30:01,847 [INFO] Preparing to generate summary
+2025-03-27 14:30:01,847 [INFO] Sending text to OpenAI. Truncated length: 687 characters
+2025-03-27 14:30:03,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 14:30:03,280 [INFO] Summary generation successful
+2025-03-27 14:30:03,281 [INFO] Generating final JSON response
+2025-03-27 14:35:19,363 [INFO] Processing PDF: uploads/pdfs/pdf_67e51bd3d99271.12065328_Test.pdf
+2025-03-27 14:35:19,365 [INFO] Extracting text from PDF: uploads/pdfs/pdf_67e51bd3d99271.12065328_Test.pdf
+2025-03-27 14:35:19,391 [INFO] Text extraction successful. Length: 687 characters
+2025-03-27 14:35:21,546 [INFO] Preparing to generate summary
+2025-03-27 14:35:21,546 [INFO] Sending text to OpenAI. Truncated length: 687 characters
+2025-03-27 14:35:23,230 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-27 14:35:23,239 [INFO] Summary generation successful
+2025-03-27 14:35:23,239 [INFO] Generating final JSON response

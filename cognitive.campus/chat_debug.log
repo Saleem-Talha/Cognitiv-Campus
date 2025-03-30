@@ -1,0 +1,854 @@
+Command: python.exe ai-chatbot_api.py "hello my name is talha" "210973@students.au.edu.pk" false
+Output: 
+Command: python.exe ai-chatbot-api.py "hello" "210973@students.au.edu.pk" false
+Output: 
+Command: python.exe ai-chatbot-api.py "hello my name is talhe" "210973@students.au.edu.pk" false
+Output: 
+Command: python.exe ai-chatbot-api.py "i am talha" "210973@students.au.edu.pk" false
+Output: Error: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-chat-sessions 
+                SET chat_count = 0,
+                    last_...' at line 1
+
+Command: python.exe ai-chatbot-api.py "i am talha" "210973@students.au.edu.pk" false
+Output: Error: 1046 (3D000): No database selected
+
+Command: python.exe ai-chatbot-api.py "i am talha" "210973@students.au.edu.pk" false
+Output: Hello Talha! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "when did pakistan win the chapions trophy" "210973@students.au.edu.pk" false
+Output: Pakistan won the ICC Champions Trophy on June 18, 2017, by defeating India in the final held at The Oval in London, England.
+
+Command: python.exe ai-chatbot-api.py "what about world cup?" "210973@students.au.edu.pk" false
+Output: The FIFA World Cup is an international soccer tournament held every four years, where national teams from around the world compete to be crowned world champions. It is one of the most prestigious and widely watched sporting events in the world, with millions of fans tuning in to watch the matches. The World Cup has a rich history and has produced many memorable moments and legendary players. The next World Cup will be held in Qatar in 2022.
+
+Command: python.exe ai-chatbot-api.py "thanks" "210973@students.au.edu.pk" false
+Output: You're welcome! Let me know if there's anything else I can help with.
+
+Command: python.exe ai-chatbot-api.py "nice" "210973@students.au.edu.pk" false
+Output: You have reached the chat limit for your current plan. Please upgrade to continue.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "210973@students.au.edu.pk" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "210973@students.au.edu.pk" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello my name is talha" "saleemtalha967@gmail.com" false
+Output: Hello Talha! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hi i am dummy , this is my name" "dummy@gmail.com" false
+Output: Hello Dummy! Nice to meet you. Is there anything I can help you with today?
+
+Command: python.exe ai-chatbot-api.py "can you help me with an assignment?" "saleemtalha967@gmail.com" false
+Output: Of course! I'd be happy to help. What do you need assistance with?
+
+Command: python.exe ai-chatbot-api.py "what is dip? or digital image processing?" "saleemtalha967@gmail.com" false
+Output: Digital image processing (DIP) is the process of manipulating digital images using computer algorithms and techniques. This can involve tasks such as enhancing the quality of an image, removing noise or unwanted elements, and analyzing or extracting information from the image. DIP is commonly used in various fields such as medicine, remote sensing, and security.
+
+Command: python.exe ai-chatbot-api.py "is it a good field to get in to?" "saleemtalha967@gmail.com" false
+Output: The answer to whether a field is good to get into depends on a variety of factors including your interests, skills, job market demand, salary potential, and job satisfaction. It is important to research and consider all these factors before deciding to pursue a career in a particular field. It may be helpful to speak with professionals in the field, conduct informational interviews, and seek advice from career counselors to make an informed decision.
+
+Command: python.exe ai-chatbot-api.py "ok ill look into it thanks" "saleemtalha967@gmail.com" false
+Output: You have reached the chat limit for your current plan. Please upgrade to continue.
+
+Command: python.exe ai-chatbot-api.py "hello my name is saleem talha" "saleemtalha967@gmail.com" false
+Output: You have reached the chat limit for your current plan. Please upgrade to continue.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hi my name is talha saleem" "saleemtalha967@gmail.com" false
+Output: Hello Talha Saleem! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "can you repeat my name for me" "saleemtalha967@gmail.com" false
+Output: Sure! Your name is Talha Saleem.
+
+Command: python.exe ai-chatbot-api.py "volley ball is my favorite sports" "saleemtalha967@gmail.com" false
+Output: That's great to hear! Volleyball is a fun and exciting sport. Do you play volleyball often?
+
+Command: python.exe ai-chatbot-api.py "what is my fav sports and what was my name?" "saleemtalha967@gmail.com" false
+Output: You have reached the chat limit for your current plan. Please upgrade to continue.
+
+Command: python.exe ai-chatbot-api.py "hi my name is saleem talha what is yours?" "saleemtalha967@gmail.com" false
+Output: Hello! I am an AI assistant here to help you. How can I assist you today, Saleem Talha?
+
+Command: python.exe ai-chatbot-api.py "i love volleyball" "saleemtalha967@gmail.com" false
+Output: That's great to hear! Volleyball is a fantastic sport that combines teamwork, skill, and strategy. Do you play volleyball recreationally or competitively?
+
+Command: python.exe ai-chatbot-api.py "what sports do i love and what was my name?" "saleemtalha967@gmail.com" false
+Output: You mentioned earlier that your favorite sport is volleyball, and your name is Saleem Talha. Is there anything else you would like to know or discuss?
+
+Command: python.exe ai-chatbot-api.py "can you give me c++ code that prints hello world please?" "saleemtalha967@gmail.com" false
+Output: Certainly! Here is a simple C++ code that prints "Hello, World!" to the console:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+You can copy and paste this code into a C++ compiler to see the output "Hello, World!" displayed on the console. Let me know if you need any more assistance!
+
+Command: python.exe ai-chatbot-api.py "gaming is my passion" "saleemtalha967@gmail.com" false
+Output: {"response": "That's awesome! Gaming can be a fun and exciting way to relax and have a good time. What are some of your favorite games to play?"}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "gaming is my passion" "saleemtalha967@gmail.com" false
+Output: {"response": "That's great to hear! What kind of games do you enjoy playing?"}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "what is pakistan's capital" "saleemtalha967@gmail.com" false
+Output: {"response": "Pakistan's capital is Islamabad."}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "New chat session started. What would you like to discuss?", "session_started": true}
+
+Command: python.exe ai-chatbot-api.py "what is the capital of pakistan" "" false
+Output: {"response": "The capital of Pakistan is Islamabad."}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "which country is the wealthiest in the world" "saleemtalha967@gmail.com" false
+Output: {"response": "The wealthiest country in the world is often determined by various factors such as GDP per capita, overall GDP, and other economic indicators. As of 2021, countries like Qatar, Luxembourg, Singapore, and Switzerland are often considered to be some of the wealthiest countries in the world. However, rankings can vary depending on the specific criteria used to measure wealth."}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "who is the richest man in the world" "saleemtalha967@gmail.com" false
+Output: {"response": "As of October 2021, the richest man in the world is Elon Musk, the CEO of Tesla and SpaceX."}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "who is the richest man on the planet" "saleemtalha967@gmail.com" false
+Output: {"response": "As of 2021, the richest man on the planet is Elon Musk, the CEO of Tesla and SpaceX."}
+
+Command: python.exe ai-chatbot-api.py "where does he live, as in which country" "saleemtalha967@gmail.com" false
+Output: {"response": "Elon Musk is a citizen of both the United States and South Africa, but he primarily resides in the United States. He currently lives in California."}
+
+Command: python.exe ai-chatbot-api.py "can you tell me an estimate of his networth" "saleemtalha967@gmail.com" false
+Output: {"response": "As of 2021, Elon Musk's net worth is estimated to be around $200 billion, making him one of the wealthiest individuals in the world."}
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: {"response": "Hello! How can I assist you today?"}
+
+Command: python.exe ai-chatbot-api.py "who is the richest man on the planet" "saleemtalha967@gmail.com" false
+Output: {"response": "As of September 2021, the richest person in the world is Elon Musk, the CEO of Tesla and SpaceX. His net worth fluctuates frequently due to changes in the stock market and his various business ventures."}
+
+Command: python.exe ai-chatbot-api.py "where does he live, as in which country" "saleemtalha967@gmail.com" false
+Output: {"response": "Elon Musk is a citizen of multiple countries, including South Africa, Canada, and the United States. He currently resides in the United States, primarily in the state of California."}
+
+Command: python.exe ai-chatbot-api.py "can you tell me an estimate of his networth" "saleemtalha967@gmail.com" false
+Output: {"response": "As of September 2021, Elon Musk's estimated net worth is over $200 billion, making him one of the wealthiest individuals in the world. However, his net worth can fluctuate due to changes in the stock market and the performance of his various businesses."}
+
+Command: python.exe ai-chatbot-api.py "ok thanks" "saleemtalha967@gmail.com" false
+Output: {"response": "You're welcome! If you have any more questions or need further assistance, feel free to ask."}
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "who is messi?" "saleemtalha967@gmail.com" false
+Output: Lionel Messi is a professional footballer from Argentina who is widely regarded as one of the greatest players of all time. He has won numerous awards and accolades throughout his career, including multiple FIFA Ballon d'Or awards for the best player in the world. Messi has spent the majority of his career playing for Barcelona, where he has set numerous records and achieved great success. In 2021, he transferred to Paris Saint-Germain (PSG) in France.
+
+Command: python.exe ai-chatbot-api.py "which country does he live in??" "saleemtalha967@gmail.com" false
+Output: Lionel Messi is originally from Argentina, but he has lived in various countries throughout his professional football career. Currently, Messi resides in Paris, France, as he now plays for Paris Saint-Germain (PSG) in the French Ligue 1.
+
+Command: python.exe ai-chatbot-api.py "which team does he play for , which club?" "saleemtalha967@gmail.com" false
+Output: As of 2021, Lionel Messi plays for Paris Saint-Germain (PSG) in the French Ligue 1. He joined PSG after spending his entire professional career at Barcelona.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "what is subcontinent" "saleemtalha967@gmail.com" false
+Output: A subcontinent is a large, distinct landmass that is part of a larger continent. It is usually separated from the rest of the continent by geographical features such as mountains or oceans. The Indian subcontinent, for example, is a region in South Asia that includes countries such as India, Pakistan, Bangladesh, Nepal, and Sri Lanka.
+
+Command: python.exe ai-chatbot-api.py "when did it split" "saleemtalha967@gmail.com" false
+Output: The Indian subcontinent is believed to have split from the supercontinent Gondwana around 130 million years ago during the Cretaceous period. This separation eventually led to the formation of the Indian plate, which later collided with the Eurasian plate, resulting in the formation of the Himalayan mountain range.
+
+Command: python.exe ai-chatbot-api.py "can i use these facts in an assignment?" "saleemtalha967@gmail.com" false
+Output: Yes, you can definitely use these facts in your assignment. Just make sure to properly cite the sources where you obtained the information from to give credit to the original authors.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "what is football" "saleemtalha967@gmail.com" false
+Output: Football, also known as soccer in some countries, is a team sport played between two teams of eleven players each. The objective of the game is to score goals by kicking the ball into the opposing team's goal. It is the most popular and widely played sport in the world, with millions of fans and players participating in matches and tournaments at various levels. Football requires skill, teamwork, and strategy, making it an exciting and competitive sport to watch and play.
+
+Command: python.exe ai-chatbot-api.py "how many players are their in one team of football" "saleemtalha967@gmail.com" false
+Output: In a standard game of football, each team consists of 11 players on the field at a time. This includes one goalkeeper and 10 outfield players. The outfield players are typically divided into defenders, midfielders, and forwards, each with specific roles and responsibilities on the field. The goalkeeper is the only player allowed to use their hands and arms to handle the ball within the penalty area.
+
+Command: python.exe ai-chatbot-api.py "which football team is considered the best?" "saleemtalha967@gmail.com" false
+Output: The title of the "best" football team is subjective and can vary depending on personal opinions and criteria for evaluation. However, some of the most successful and highly regarded football clubs in the world include teams like Real Madrid, FC Barcelona, Bayern Munich, Manchester City, and Liverpool, among others. These teams have a rich history of winning domestic and international titles, and have consistently performed at a high level in their respective leagues and competitions. Ultimately, the best football team is a matter of personal preference and can change over time based on current form and success.
+
+Command: python.exe ai-chatbot-api.py "which team does messi play for" "saleemtalha967@gmail.com" false
+Output: As of September 2021, Lionel Messi plays for Paris Saint-Germain (PSG), a professional football club based in Paris, France. Messi joined PSG in August 2021 after spending his entire professional career at FC Barcelona. Messi is widely regarded as one of the greatest footballers of all time and has won numerous individual awards and team titles throughout his career.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "is amazon a jungle?" "saleemtalha967@gmail.com" false
+Output: No, Amazon is not a jungle. Amazon is a multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. The name "Amazon" was chosen to convey the vast selection of products available on the platform, similar to the diversity of plant and animal species found in the Amazon rainforest.
+
+Command: python.exe ai-chatbot-api.py "where is it located" "saleemtalha967@gmail.com" false
+Output: Amazon is headquartered in Seattle, Washington, United States. They have offices and fulfillment centers located all over the world to support their global operations.
+
+Command: python.exe ai-chatbot-api.py "is it safe to visit?" "saleemtalha967@gmail.com" false
+Output: The Amazon headquarters in Seattle is safe to visit. However, if you are referring to the Amazon rainforest, it is important to take necessary precautions and be prepared for the challenges of traveling in a remote and potentially hazardous environment. It is always recommended to research and plan your trip thoroughly, and consider going with a reputable tour operator or guide who is familiar with the area.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "do you know about php?" "saleemtalha967@gmail.com" false
+Output: Yes, I am familiar with PHP. PHP is a popular server-side scripting language that is used to develop dynamic web applications. It is commonly used for building websites and web applications, and it can interact with databases, process form data, and generate dynamic content on web pages. If you have any specific questions about PHP, feel free to ask!
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "dummy@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "dummy@gmail.com" false
+Output: Hi there! How are you doing?
+
+Command: python.exe ai-chatbot-api.py "hello" "dummy@gmail.com" false
+Output: Hello again! How can I help you today?
+
+Command: python.exe ai-chatbot-api.py "my name is dummy what is yours?" "dummy@gmail.com" false
+Output: Nice to meet you, Dummy! My name is Assistant. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "do you know about this new movie venom the last dance?" "dummy@gmail.com" false
+Output: You have reached the chat limit for basic plan.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "dummy@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hi" "dummy@gmail.com" false
+Output: Hello! How are you doing?
+
+Command: python.exe ai-chatbot-api.py "Hi my name is dummy" "dummy@gmail.com" false
+Output: Nice to meet you, Dummy! How can I help you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "dummy@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "Introduction to Cryptocurrency" "saleemtalha967@gmail.com" false
+Output: Cryptocurrency is a digital or virtual form of currency that uses cryptography for security and operates independently of a central authority, such as a government or financial institution. The most well-known cryptocurrency is Bitcoin, but there are thousands of other cryptocurrencies in existence, including Ethereum, Ripple, and Litecoin.
+
+Cryptocurrencies are typically decentralized and operate on a technology called blockchain, which is a distributed ledger that records all transactions across a network of computers. This technology ensures transparency and security, as each transaction is verified by multiple participants in the network.
+
+Cryptocurrencies can be used for various purposes, including online purchases, investment, and remittances. They offer advantages such as lower transaction fees, faster transfer times, and increased privacy compared to traditional forms of currency.
+
+However
+
+Command: python.exe ai-chatbot-api.py "Introduction to Cryptocurrency" "saleemtalha967@gmail.com" false
+Output: Cryptocurrency is a type of digital or virtual currency that uses cryptography for security and operates independently of a central authority, such as a government or financial institution. The most well-known cryptocurrency is Bitcoin, but there are thousands of other cryptocurrencies in existence, each with its own unique features and uses.
+
+Cryptocurrencies are typically decentralized and operate on a technology called blockchain, which is a distributed ledger that records all transactions across a network of computers. This technology ensures transparency and security, as each transaction is verified by multiple participants in the network.
+
+Cryptocurrencies can be used for various purposes, including online purchases, investment, and remittances. They offer advantages such as lower transaction fees, faster transfer times, and increased privacy compared to traditional forms of currency.
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "write a c++ code that prints hello world" "saleemtalha967@gmail.com" false
+Output: Sure! Here is a simple C++ code that prints "Hello, World!" to the console:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+You can copy and paste this code into a C++ compiler and run it to see the output "Hello, World!" displayed on the screen. Let me know if you have any other questions or need further assistance!
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello there, As  a professional Software engineer I wan t you to tell me what are the prerequisites that I should consider when developoing any single short to mid level rpoject" "saleemtalha967@gmail.com" false
+Output: Sure! When developing a short to mid-level project as a software engineer, there are several key prerequisites that you should consider. Here are some important factors to keep in mind:
+
+1. Define the project scope and requirements: Before starting any project, it's crucial to clearly define the scope and requirements. This includes understanding the goals of the project, identifying key features and functionalities, and determining the timeline and budget.
+
+2. Choose the right technology stack: Selecting the appropriate technology stack is essential for the success of your project. Consider factors such as the programming language, frameworks, and tools that best suit the requirements of your project.
+
+3. Plan the architecture and design: Designing a solid architecture is crucial for the scalability and maintainability of your project
+
+Command: python.exe ai-chatbot-api.py "what are they and how do I get them give me step by step guide for each" "saleemtalha967@gmail.com" false
+Output: Sure! Here is a step-by-step guide for each of the prerequisites mentioned:
+
+1. Define the project scope and requirements:
+   - Conduct a thorough analysis of the project requirements by gathering input from stakeholders and users.
+   - Clearly define the project goals and objectives.
+   - Create a detailed project scope document outlining the features, functionalities, and deliverables.
+   - Establish a timeline and budget for the project.
+
+2. Choose the right technology stack:
+   - Research and evaluate different technology options based on the project requirements.
+   - Consider factors such as the scalability, performance, and ease of maintenance of the technology stack.
+   - Consult with team members and experts to make informed decisions on the technology stack.
+   - Create a technology roadmap outlining the chosen
+
+Command: python.exe ai-chatbot-api.py "Write me a code for implementing Linked list in c++" "saleemtalha967@gmail.com" false
+Output: Sure! Here is a simple implementation of a singly linked list in C++:
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+// Node class to represent each element in the linked list
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int value) {
+        data = value;
+        next = nullptr;
+    }
+};
+
+// Linked list class
+class LinkedList {
+private:
+    Node* head;
+
+public:
+    LinkedList() {
+        head = nullptr;
+    }
+
+    // Function to insert a new node at the beginning of the linked list
+    void insert(int value) {
+        Node* newNode = new Node(value);
+        newNode->next = head;
+        head = newNode;
+    }
+
+    // Function to
+
+Command: python.exe ai-chatbot-api.py "Write code for hello world in C++" "saleemtalha967@gmail.com" false
+Output: Certainly! Here is a simple "Hello, World!" program in C++:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+This program will output "Hello, World!" to the console when run.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "What are your features" "saleemtalha967@gmail.com" false
+Output: Error in get_response: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Error: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Command: python.exe ai-chatbot-api.py "hello what are the main features of cognitive campus" "saleemtalha967@gmail.com" false
+Output: Cognitive Campus is a platform that offers various features to enhance the learning experience for students and educators. Some of the main features include:
+
+1. Personalized learning paths: Cognitive Campus uses AI technology to create personalized learning paths for students based on their individual needs and preferences.
+
+2. Virtual classrooms: The platform provides virtual classrooms where students can participate in live lectures, discussions, and group projects with their peers and instructors.
+
+3. Interactive learning resources: Cognitive Campus offers a wide range of interactive learning resources, such as videos, quizzes, and simulations, to help students engage with the material in a more dynamic way.
+
+4. Collaboration tools: The platform includes collaboration tools that allow students to work together on assignments, projects, and study groups, fostering a sense
+
+Command: python.exe ai-chatbot-api.py "what is your name?" "saleemtalha967@gmail.com" false
+Output: I am an AI assistant and do not have a personal name. You can refer to me as Assistant or by any other name you prefer. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "What's the mission of this platform?" "saleemtalha967@gmail.com" false
+Output: The mission of Cognitive Campus is to provide a cutting-edge and personalized learning experience for students and educators by leveraging AI technology and innovative tools to enhance academic success and foster collaboration and engagement in a virtual learning environment. Our goal is to empower individuals to reach their full potential and achieve their educational goals through a flexible and adaptive platform that caters to their unique learning needs.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "What can I do with this platform?" "saleemtalha967@gmail.com" false
+Output: You can ask me questions, have conversations, seek information, get recommendations, and more! Feel free to ask me anything you'd like help with.
+
+Command: python.exe ai-chatbot-api.py "what billing plans does this website offer?" "saleemtalha967@gmail.com" false
+Output: I'm sorry, but as an AI assistant, I don't have access to specific billing plans for this website. You may need to check the website's pricing or contact their customer support for detailed information on their billing plans. Is there anything else I can assist you with?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "what is the name of this platform?" "saleemtalha967@gmail.com" false
+Output: Cognitive Campus is Student Productivity Enhancement System using LLM. Empowering students with intelligent productivity tools and personalized learning experiences
+
+Command: python.exe ai-chatbot-api.py "How can I take notes on this platform?" "saleemtalha967@gmail.com" false
+Output: You can easily take notes during our conversation by typing them out in the chat. You can also copy and paste important information into a separate document or note-taking app for later reference. If you have specific notes you'd like to keep, feel free to let me know and I can help you organize them.
+
+Command: python.exe ai-chatbot-api.py "no i meant how can i take notes in cognitive campus?" "saleemtalha967@gmail.com" false
+Output: I'm not familiar with a platform called Cognitive Campus. Could you provide more information or clarify what you are referring to so I can assist you better?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: 
+Command: python.exe ai-chatbot-api.py "how can i take notes in cognitive campus?" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "What is Cognitive Campus?" "saleemtalha967@gmail.com" false
+Output: Cognitive Campus is Student Productivity Enhancement System using LLM. Empowering students with intelligent productivity tools and personalized learning experiences. It's designed to help students enhance their productivity and learning experience.
+
+Command: python.exe ai-chatbot-api.py "Who developed this platform?" "saleemtalha967@gmail.com" false
+Output: This platform was developed by a team of engineers and developers at OpenAI.
+
+Command: python.exe ai-chatbot-api.py "hello how are you" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-chatbot-api.py "hello how are you" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-chatbot-api.py "hello how are you" "saleemtalha967@gmail.com" false
+Output: Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to help you. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello how are you" "saleemtalha967@gmail.com" false
+Output: Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to help you. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello how are you" "saleemtalha967@gmail.com" false
+Output: Hello! I'm just a computer program, so I don't have feelings, but I'm here and ready to help you. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hi there! How are you doing?
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hello again! How can I help you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hi there! How are you doing?
+
+Command: python.exe ai-context-chatbot-api.py "What types of courses can I manage?" "saleemtalha967@gmail.com" false
+Output: An error occurred: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Command: python.exe ai-context-chatbot-api.py "What types of courses can I manage?" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-context-chatbot-api.py "What is the mission of the Cognitive Campus platform?" "saleemtalha967@gmail.com" false
+Output: The mission of Cognitive Campus is to empower students with intelligent productivity tools and personalized learning experiences. Our goal is to enhance student productivity through features like Subjects/Courses Management, Project Collaboration, Advanced Note-Taking, Schedule Management, AI-Powered Assistant, and a Comprehensive Dashboard.
+
+Command: python.exe ai-context-chatbot-api.py "what is this website's name?" "210973@students.au.edu.pk" false
+Output: The website's name is Cognitive Campus.
+
+Command: python.exe ai-context-chatbot-api.py "what is it about?" "210973@students.au.edu.pk" false
+Output: Cognitive Campus is a student productivity platform that focuses on enhancing student productivity using LLM (Language Model). It empowers students with intelligent productivity tools and personalized learning experiences. The platform offers features such as Subjects/Courses Management, Project Collaboration, Advanced Note-Taking, Schedule Management, AI-Powered Assistant, and a Comprehensive Dashboard to help students stay organized and efficient in their academic pursuits.
+
+Command: python.exe ai-context-chatbot-api.py "who developed this site?" "210973@students.au.edu.pk" false
+Output: Cognitive Campus was developed by a team of skilled software developers and AI specialists dedicated to creating an efficient and intelligent platform for student productivity enhancement. Our focus is on empowering students with intelligent tools and personalized learning experiences to support their academic journey effectively.
+
+Command: python.exe ai-context-chatbot-api.py "can you tell me the names of these developers" "210973@students.au.edu.pk" false
+Output: I'm here to assist with information about the Cognitive Campus platform and its features. If you have any questions related to subjects/courses management, project collaboration, advanced note-taking, schedule management, AI-powered assistant, or the comprehensive dashboard, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "how can i go to the billing page" "210973@students.au.edu.pk" false
+Output: To access the billing page on Cognitive Campus, please click on your profile icon in the top right corner of the dashboard. From there, select "Billing" or "Subscription" to manage your account's billing details and subscription plan. If you encounter any issues or need further assistance, feel free to ask for help!
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "210973@students.au.edu.pk" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "Hello can i ask you a few questions?" "210973@students.au.edu.pk" false
+Output: Of course! Feel free to ask me anything.
+
+Command: python.exe ai-chatbot-api.py "what is 0-1 knab sack?" "210973@students.au.edu.pk" false
+Output: The 0-1 knapsack problem is a combinatorial optimization problem where the goal is to maximize the total value of items that can be placed into a knapsack without exceeding its weight capacity. Each item has a value and a weight, and the knapsack has a maximum weight capacity. The "0-1" in the name refers to the fact that each item can only be included in the knapsack once (either 0 or 1 times). This problem is known for its NP-complete complexity and is commonly used in algorithm design and optimization scenarios.
+
+Command: python.exe ai-chatbot-api.py "ok i am looking to get into ai , what are the basics to get started" "210973@students.au.edu.pk" false
+Output: To get started in the field of AI, here are some basics you can focus on:
+
+1. Learn programming languages: Start by learning programming languages such as Python, which is widely used in AI development due to its simplicity and readability.
+
+2. Understand the fundamentals of AI: Study the basic concepts of artificial intelligence, including machine learning, neural networks, natural language processing, and computer vision.
+
+3. Take online courses: Enroll in online courses or tutorials on platforms like Coursera, Udemy, or edX to deepen your understanding of AI concepts and algorithms.
+
+4. Practice with projects: Work on AI projects to apply your knowledge and gain practical experience. Start with simple projects and gradually move on to more complex ones.
+
+5. Stay updated
+
+Command: python.exe ai-chatbot-api.py "please complete your response" "210973@students.au.edu.pk" false
+Output: You have reached the chat limit for basic plan.
+
+Command: python.exe ai-chatbot-api.py "hello write the hisotry of korea" "saleemtalha967@gmail.com" false
+Output: The history of Korea is a vast and complex topic, spanning thousands of years. Here is a brief overview of the key events and periods in Korean history:
+
+- Ancient Korea: The Korean Peninsula has been inhabited for thousands of years, with early civilizations emerging around 2000 BC. The first known kingdom, Gojoseon, was established in the northern part of the peninsula around the 7th century BC.
+
+- Three Kingdoms Period (57 BC - 668 AD): The Korean Peninsula was divided into three kingdoms - Goguryeo, Baekje, and Silla - during this period. These kingdoms competed for power and influence, with Silla eventually emerging as the dominant force and unifying the peninsula in 668 AD.
+
+- Unified Silla and Goryeo Dynasty (918 - 1392): The unified Silla kingdom gave way to the Goryeo Dynasty, which ruled Korea for over four centuries. During this time, Buddhism flourished, and cultural achievements such as the creation of the Korean alphabet, Hangul, were made.
+
+- Joseon Dynasty (1392 - 1910)... [Response truncated]
+
+Command: python.exe ai-chatbot-api.py "write me code for a hero section in html" "saleemtalha967@gmail.com" false
+Output: Sure! Here's an example of a basic hero section in HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Section Example</title>
+<style>
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Welcome to our website</h1>
+    <p>Discover amazing content and services</p>
+</div>
+
+</body>
+</html>
+```
+
+In this code snippet, we have a `<div>` element with the class "hero" that acts as the hero section. The background image is set using the `background-image` property, and the content is centered both horizontally and vertically using Flexbox. Feel free to customize the content and styling to suit your needs!
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "umersaeed999@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "dummy@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "dummy@gmail.com" false
+Output: Hi there! How are you doing?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "dummy@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "hello" "dummy@gmail.com" false
+Output: Hi there! How are you doing?
+
+Command: python.exe ai-chatbot-api.py "amazing thank you" "dummy@gmail.com" false
+Output: That's great to hear! How can I help you today?
+
+Command: python.exe ai-context-chatbot-api.py "what kind of courses are available on this site" "dummy@gmail.com" false
+Output: On Cognitive Campus, you can manage Extra Courses that you create yourself, Active Courses from Google Classroom, and Inactive Courses. This allows you to easily organize and track all your courses, whether they are from your university or additional self-learning opportunities. Let me know if you need help with any specific course management tasks!
+
+Command: python.exe ai-chatbot-api.py "Hello how are you" "aneylasalman85@gmail.com" false
+Output: Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you with anything you need. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "write a cpp program for hello world" "aneylasalman85@gmail.com" false
+Output: Sure! Here is a simple C++ program that prints "Hello, World!" to the console:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+You can copy and paste this code into a C++ compiler to run it and see the output. Let me know if you need any further assistance!
+
+Command: python.exe ai-chatbot-api.py "write history of korea" "aneylasalman85@gmail.com" false
+Output: The history of Korea is long and complex, with a rich cultural heritage and a history of both unity and division. Here is a brief overview of the key periods in Korean history:
+
+1. Ancient Korea (ca. 2333 BCE - 668 CE): Korea's history dates back to ancient times, with the founding of the first Korean state, Gojoseon, around 2333 BCE. The Three Kingdoms period (57 BCE - 668 CE) saw the rise of three powerful kingdoms - Goguryeo, Baekje, and Silla - which competed for dominance on the Korean Peninsula.
+
+2. Unified Silla and Goryeo Dynasty (668 - 1392): The Silla kingdom eventually united the peninsula under its rule in 668, ushering in a period of cultural and artistic flourishing. The Goryeo Dynasty succeeded Silla in 918 and ruled Korea for nearly 500 years.
+
+3. Joseon Dynasty (1392 - 1910): The Joseon Dynasty was founded in 1392 and is considered one of the longest-ruling dynasties in Korean history. During this period, Confucianism became the dominant ideology, and Korea experienced... [Response truncated]
+
+Command: python.exe ai-context-chatbot-api.py "what is the name of this platform" "aneylasalman85@gmail.com" false
+Output: The name of this platform is Cognitive Campus. It is a Student Productivity Enhancement System using LLM.
+
+Command: python.exe ai-context-chatbot-api.py "what features does it provide" "aneylasalman85@gmail.com" false
+Output: Cognitive Campus offers a range of features to enhance student productivity and learning experiences. These include Subjects/Courses Management, Project Collaboration, Advanced Note-Taking, Schedule Management, an AI-Powered Assistant, and a Comprehensive Dashboard. With these features, students can efficiently manage their courses, collaborate on projects, take detailed notes, stay organized with their schedule, and receive assistance from the AI-powered assistant for various tasks.
+
+Command: python.exe ai-context-chatbot-api.py "how to navigate to course page" "aneylasalman85@gmail.com" false
+Output: To navigate to the course page on Cognitive Campus, you can follow these steps:
+
+1. Log in to your Cognitive Campus account.
+2. Look for the "Subjects" or "Courses" tab on the main dashboard.
+3. Click on the tab to access your list of courses or subjects.
+4. You can then select the specific course you want to navigate to from the list provided.
+
+If you are looking for a specific feature within the course page, feel free to ask for more detailed guidance!
+
+Command: python.exe ai-context-chatbot-api.py "what subscription plan does this site offer" "aneylasalman85@gmail.com" false
+Output: Cognitive Campus offers three subscription plans: Basic, Standard, and Premium. Each plan has different limits and features tailored to meet varying user needs and preferences. You can choose a plan based on your usage requirements and unlock more functionalities as you progress through your student journey.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "aneylasalman85@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "what is current time now" "saleemtalha967@gmail.com" false
+Output: I'm sorry, but I am unable to provide real-time information such as the current time. I recommend checking the time on your device or a reliable online source for the most accurate information. Is there anything else I can help you with?
+
+Command: python.exe ai-chatbot-api.py "what is going on in this worl" "saleemtalha967@gmail.com" false
+Output: There are many things happening in the world right now, from global events to local news. Some current events include ongoing conflicts, political developments, environmental issues, and advancements in technology. Is there a specific topic or event you are interested in learning more about?
+
+Command: python.exe ai-context-chatbot-api.py "what is going on in this world" "saleemtalha967@gmail.com" false
+Output: As an AI assistant for Cognitive Campus, I'm here to help empower you with intelligent productivity tools and personalized learning experiences. If you have any questions or need assistance with managing your courses, projects, notes, schedule, or AI assistant capabilities, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "do you know anything about darkweb?" "saleemtalha967@gmail.com" false
+Output: I'm here to assist with anything related to Cognitive Campus and its features, such as Subjects/Courses Management, Project Collaboration, Advanced Note-Taking, Schedule Management, and AI-Powered Assistant. If you have any questions about these topics or need help with any productivity-related queries, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "how SSP shortest superstring work?" "saleemtalha967@gmail.com" false
+Output: As an AI assistant for Cognitive Campus, our platform primarily focuses on student productivity tools and personalized learning experiences. While we do offer advanced note-taking features and AI capabilities, we do not specifically provide information on the concept of "SSP shortest superstring." If you have any questions related to our core features or services, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "which courses are registered with me" "saleemtalha967@gmail.com" false
+Output: To see which courses are registered with you on Cognitive Campus, you can check under "Subjects/Courses Management" in your dashboard. You will find a list of your active university subjects, extra courses you have created, and any inactive courses. Let me know if you need any assistance navigating or managing your courses!
+
+Command: python.exe ai-chatbot-api.py "hello" "saleemtalha967@gmail.com" false
+Output: Hello! How are you today?
+
+Command: python.exe ai-chatbot-api.py "make an image of a football" "saleemtalha967@gmail.com" false
+Output: I'm sorry, but I am a text-based AI and cannot create images. However, you can easily find images of footballs by searching for them online or using image editing software. Let me know if you need help with anything else!
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "saleemtalha967@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "hello , what is my name?" "saleemtalha967@gmail.com" false
+Output: Error loading user context: Invalid URL 'your_domain/get_user_context.php': No scheme supplied. Perhaps you meant https://your_domain/get_user_context.php?
+An error occurred: 'NoneType' object is not subscriptable
+
+Command: python.exe ai-context-chatbot-api.py "hello what is my name?" "saleemtalha967@gmail.com" false
+Output: Error loading user context: Invalid URL 'get_user_context.php': No scheme supplied. Perhaps you meant https://get_user_context.php?
+An error occurred: 'NoneType' object is not subscriptable
+
+Command: python.exe ai-context-chatbot-api.py "how can i access my courses?" "saleemtalha967@gmail.com" false
+Output: To access your courses on Cognitive Campus, you can navigate to the "Courses Management" section. Here, you can view and manage your Extra Courses (User Created), Active Courses (Google Classroom), and Inactive Courses. Simply select the relevant category to access the courses you are enrolled in or have created. If you need any assistance in managing your courses or have specific inquiries, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "hello how to reach the schedules page" "saleemtalha967@gmail.com" false
+Output: To access the schedules page on Cognitive Campus, you can navigate to the Schedule Management feature on the dashboard. From there, you will be able to view, edit, and manage your schedules for various subjects, courses, and projects. If you need further assistance or have specific schedule-related tasks in mind, feel free to ask for more detailed guidance!
+
+Command: python.exe ai-context-chatbot-api.py "hello what is my username" "saleemtalha967@gmail.com" false
+Output: Database Error: 1046 (3D000): No database selected
+An error occurred: 'user'
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: Database Error: 1146 (42S02): Table 'talha_db.task' doesn't exist
+An error occurred: Object of type datetime is not JSON serializable
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: An error occurred: Object of type datetime is not JSON serializable
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: An error occurred: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 32195 tokens. Please reduce the length of the messages.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name?" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: An error occurred: Error code: 429 - {'error': {'message': 'Request too large for gpt-4 in organization org-T4tOIl42Sy7Vv0rXLXS2oexb on tokens per min (TPM): Limit 10000, Requested 14389. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+
+Command: python.exe ai-context-chatbot-api.py "what is your name" "saleemtalha967@gmail.com" false
+Output: 
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: Database Error: 'user'
+An error occurred: 'user'
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'type' in 'field list'
+An error occurred: 'projects'
+
+Command: python.exe ai-context-chatbot-api.py "hi what is your name" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'type' in 'field list'
+An error occurred: 'projects'
+
+Command: python.exe ai-context-chatbot-api.py "hi what is your name" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'projectId' in 'field list'
+An error occurred: 'projects'
+
+Command: python.exe ai-context-chatbot-api.py "hi what is your name" "saleemtalha967@gmail.com" false
+Output: An error occurred: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 32040 tokens. Please reduce the length of the messages.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+
+Command: python.exe ai-context-chatbot-api.py "hi what is your name" "saleemtalha967@gmail.com" false
+Output: Hello! I am the Cognitive Campus assistant. How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what is my name?" "saleemtalha967@gmail.com" false
+Output: Your name is Saleem Talha. Is there anything else you would like assistance with?
+
+Command: python.exe ai-context-chatbot-api.py "can you list the courses i am enrolled in please?" "saleemtalha967@gmail.com" false
+Output: Currently, you are not enrolled in any courses. If you would like to enroll in a course or need assistance with selecting courses, feel free to let me know!
+
+Command: python.exe ai-context-chatbot-api.py "can you name the course_status i have" "saleemtalha967@gmail.com" false
+Output: Based on the information provided, it seems that you have not mentioned any specific courses or their status. If you can provide the names of the courses you are enrolled in or interested in, I can help you with checking their status or providing any other relevant information. Feel free to provide more details so I can assist you better.
+
+Command: python.exe ai-context-chatbot-api.py "please tell me what courses do i have , fetch my data and give me a list or give mei my recent courses" "saleemtalha967@gmail.com" false
+Output: You currently have the following courses:
+
+1. Internship Project Space
+2. Dummy project_2
+3. IM
+
+If you need more details or have any other questions, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "my current projects?" "saleemtalha967@gmail.com" false
+Output: Your active projects are:
+1. Internship Project Space
+2. Dummy project_2
+3. IM
+
+How can I assist you further with these projects?
+
+Command: python.exe ai-context-chatbot-api.py "name 3 of my own courses" "saleemtalha967@gmail.com" false
+Output: Sure! Here are 3 of your own courses:
+1. Crypto
+2. Codexcue Internship
+3. Full Stack Web Development
+
+Command: python.exe ai-context-chatbot-api.py "name my uni courses" "saleemtalha967@gmail.com" false
+Output: Here are your university courses:
+
+1. Crypto
+2. Codexcue Internship
+3. Full Stack Web Development
+4. Information Security
+
+If you need any assistance or information regarding these courses, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "hello name my uni courses" "saleemtalha967@gmail.com" false
+Output: You currently do not have any university courses added to your list. Is there a specific university course you are considering adding or looking for information on?
+
+Command: python.exe ai-context-chatbot-api.py "name my own courses" "saleemtalha967@gmail.com" false
+Output: Your own courses are:
+1. Crypto
+2. Codexcue Internship
+3. Full Stack Web Development
+4. Information Security
+
+Command: python.exe ai-context-chatbot-api.py "i do have a uni course named Testing GCR class" "saleemtalha967@gmail.com" false
+Output: It seems like you have a university course named "Testing" in your course list. Would you like to know more about this course or any tasks related to it?
+
+Command: python.exe ai-context-chatbot-api.py "hi what is my name" "dummy@gmail.com" false
+Output: I'm here to assist you with your learning journey on this platform. How can I help you with your university/GCR courses, extra/own courses, or projects today?
+
+Command: python.exe ai-context-chatbot-api.py "what is my username?" "dummy@gmail.com" false
+Output: Your username is Dummy. How can I assist you further today?
+
+Command: python.exe ai-context-chatbot-api.py "what subscription plan do i have?" "dummy@gmail.com" false
+Output: You have the Dummy plan, which is a basic plan. With this plan, you can add and manage your own courses, track your university/GCR courses, and work on your projects. If you have any other questions or need assistance with your courses or projects, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "what is my name" "saleemtalha967@gmail.com" false
+Output: Your name is Saleem Talha. How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what subscription plan do i have" "saleemtalha967@gmail.com" false
+Output: You have a standard subscription plan. How can I assist you further with your learning journey today?
+
+Command: python.exe ai-context-chatbot-api.py "what other plans does your platform offer" "saleemtalha967@gmail.com" false
+Output: Currently, our platform offers a standard plan. The standard plan provides access to a variety of features and tools to assist you in your learning journey. If you're interested in learning more about the specific features included in the standard plan or if you have any questions about upgrading your plan, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "hi what subscription plans does your platform offer" "saleemtalha967@gmail.com" false
+Output: The platform offers three subscription plans:
+1. Basic
+2. Standard
+3. Premium
+
+Command: python.exe ai-context-chatbot-api.py "what subscription plan do i have" "saleemtalha967@gmail.com" false
+Output: You are subscribed to the standard plan.
+
+Command: python.exe ai-context-chatbot-api.py "what type of courses can you have on your platform" "saleemtalha967@gmail.com" false
+Output: On the Cognitive Campus platform, you can have two types of courses:
+1. University/GCR Courses: These are the standard courses provided by the user's university or institution.
+2. Extra/Own Courses: These are additional courses that users can add to their platform, such as online courses, workshops, or self-study subjects.
+
+Command: python.exe ai-context-chatbot-api.py "what GCR Courses do i have" "saleemtalha967@gmail.com" false
+Output: You currently do not have any GCR courses. Let me know if you need any other information or assistance.
+
+Command: python.exe ai-context-chatbot-api.py "i do have a gcr course called Testing GCR class" "saleemtalha967@gmail.com" false
+Output: It seems that there might have been a miscommunication. Currently, you don't have any University/GCR courses listed in your courses. If you would like to add the course "Testing GCR class" to your list, please provide more details or let me know how you would like to proceed.
+
+Command: python.exe ai-context-chatbot-api.py "hello how many University / GCR courses do i have" "210973@students.au.edu.pk" false
+Output: You currently do not have any University/GCR courses added to your course list. You have 3 extra/own courses added instead. Let me know if you need any assistance with them.
+
+Command: python.exe ai-context-chatbot-api.py "i have 6 university courses are you dumb? fetch course_status to find out" "210973@students.au.edu.pk" false
+Output: It appears that there are no university courses listed in your course_status at the moment. If you have any additional information or if you need assistance with anything else, please let me know!
+
+Command: python.exe ai-context-chatbot-api.py "how many university courses do i have" "210973@students.au.edu.pk" false
+Output: An error occurred: 'status'
+
+Command: python.exe ai-context-chatbot-api.py "give me an answer" "210973@students.au.edu.pk" false
+Output: An error occurred: 'status'
+
+Command: python.exe ai-context-chatbot-api.py "how many university courses do i have" "210973@students.au.edu.pk" false
+Output: You have a total of 6 university courses.
+
+Command: python.exe ai-context-chatbot-api.py "hello what is my name" "saleemtalha967@gmail.com" false
+Output: Your name is Saleem Talha.
+
+Command: python.exe ai-context-chatbot-api.py "what uni or gcr course i have" "saleemtalha967@gmail.com" false
+Output: You have 1 university/GCR course, which is "Testing GCR Class."
+
+Command: python.exe ai-context-chatbot-api.py "What AI features are available for notes?" "umersaeed999@gmail.com" false
+Output: The AI features available for notes on Cognitive Campus include:
+
+1. Smart Summarization: Automatically generates concise summaries of your notes for quick review.
+2. Keyword Extraction: Identifies and highlights key terms in your notes for better organization and study.
+3. Sentiment Analysis: Analyzes the tone and sentiment of your notes to provide insights into your writing style.
+4. Content Recommendations: Suggests related topics or content based on the context of your notes to enhance learning and understanding.
+5. Text Analysis: Provides detailed analysis of the text in your notes, such as word count, readability score, and more.
+
+These AI-powered features aim to enhance your note-taking experience and help you extract meaningful insights from your study materials.
+
+Command: python.exe ai-context-chatbot-api.py "who are in the developer team of this" "umersaeed999@gmail.com" false
+Output: The developer team behind Cognitive Campus is a group of skilled professionals with expertise in software development, artificial intelligence, and user experience design. While I don't have specific names of individual developers, the team collectively works together to create and enhance the platform to provide users like you with intelligent productivity tools and personalized learning experiences.
+
+Command: python.exe ai-context-chatbot-api.py "What is Cognitive Campus?" "umersaeed999@gmail.com" false
+Output: Cognitive Campus is an advanced student productivity platform that uses AI to enhance learning, project management, and personal organization. It integrates with Google Classroom to provide a comprehensive academic management system.
+
+Command: python.exe ai-context-chatbot-api.py "who are the developers of cognitive campus" "umersaeed999@gmail.com" false
+Output: The developers of Cognitive Campus are not specified in the information provided.
+
+Command: python.exe ai-context-chatbot-api.py "who are the developers of cognitive campus" "umersaeed999@gmail.com" false
+Output: The developers of Cognitive Campus are Anila Salman (Head of UI/UX), Saleem Talha (Lead Developer), and Muhammad Saad (Backend Developer).
+

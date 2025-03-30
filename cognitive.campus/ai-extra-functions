@@ -1,0 +1,66 @@
+def get_session_first_user_message(session_id):
+    """
+    Fetch the first user message from the session, excluding 'New Chat Started'
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+        
+        # Fetch all messages for this session to handle "New Chat Started" case
+        cursor.execute("""
+            SELECT message
+            FROM ai_chat_messages
+            WHERE session_id = %s 
+              AND sender = 'user' 
+            ORDER BY id ASC
+        """, (session_id,))
+        messages = cursor.fetchall()
+
+        # Find the first non-generic user message
+        first_message = None
+        for msg in messages:
+            if msg['message'] not in ["", "New Chat Started", "Untitled Chat"]:
+                first_message = msg['message']
+                break
+        
+        return first_message or "Untitled Chat"
+    finally:
+        cursor.close()
+        conn.close()
+
+
+def get_first_three_messages(session_id):
+    """
+    Fetch the first three pairs of user messages and AI responses from a session.
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("""
+            SELECT sender, message
+            FROM ai_chat_messages
+            WHERE session_id = %s
+            ORDER BY id ASC
+            LIMIT 6
+        """, (session_id,))
+        messages = cursor.fetchall()
+        
+        # Clean the messages
+        cleaned_messages = []
+        for msg in messages:
+            if msg['sender'] == 'ai':
+                try:
+                    # Try to parse JSON response
+                    parsed = json.loads(msg['message'])
+                    if isinstance(parsed, dict) and 'response' in parsed:
+                        msg['message'] = parsed['response']
+                except:
+                    pass
+            cleaned_messages.append(msg)
+            
+        return cleaned_messages
+    finally:
+        cursor.close()
+        conn.close()
