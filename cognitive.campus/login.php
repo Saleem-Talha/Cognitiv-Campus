@@ -3,8 +3,6 @@
 require_once 'includes/db-connect.php';
 require_once 'includes/rate-limit.php';
 require_once 'two-factor-auth-mail.php';
-
-// Start session at the beginning of the script
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -38,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     // Check if 2FA is enabled
                     if ($user['two_factor_enabled'] == 1) {
                         // Generate 6-digit OTP
-                        $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
+                        $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT); //we are using pad to ensure otp is 6 digits by adding 0's just in case
                         $hashedOtp = password_hash($otp, PASSWORD_DEFAULT);
                         
                         // Set OTP expiry (15 minutes from now)

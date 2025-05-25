@@ -1,11 +1,8 @@
 <?php
-// Include Composer's autoload file to load the Google API client library and other dependencies
-require_once 'vendor/autoload.php';
 
-// Include the database connection file
+require_once 'vendor/autoload.php';
 require_once 'includes/db-connect.php';
 
-// Start output buffering
 ob_start();
 $clientId = GOOGLE_CLIENT_ID;
     $clientSecret = GOOGLE_CLIENT_SECRET;
@@ -14,7 +11,6 @@ $client = new Google_Client();
     $client->setClientId($clientId);
     $client->setClientSecret($clientSecret);
     $client->setRedirectUri($redirectUri);
-// Add scopes required for accessing Google Classroom and Google Drive APIs
 $client->addScope(Google_Service_Classroom::CLASSROOM_COURSES);
 $client->addScope(Google_Service_Classroom::CLASSROOM_ANNOUNCEMENTS);
 $client->addScope(Google_Service_Classroom::CLASSROOM_COURSEWORK_STUDENTS);

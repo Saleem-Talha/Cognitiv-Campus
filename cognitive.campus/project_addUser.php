@@ -1,14 +1,12 @@
-
 <div class="col-md-6">
     <div class="card">
         <div class="card-header">
 
             <?php
-            //project-addUser-check-email.php used in project-details.php checks the email of here
+            include('includes/header.php');
             // Check if the current user is the owner of the project
             if ($ownerEmail == $userEmail) {
             ?>
-
                 <!-- Button to trigger modal for adding a new user -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" <?php echo ($project_status !== 'Active') ? 'disabled' : ''; ?>>
                     <i class="bx bx-plus"></i> Add User
@@ -19,7 +17,7 @@
             ?>
 
             <!-- Button to open conversation view -->
-            <a href="project-chat.php?project_id=<?php echo $project_id; ?>" class="btn btn-outline-primary"><i class="bx bx-chat me-2"></i> Converstaion</a>
+            <a href="project-chat.php?project_id=<?php echo $project_id; ?>" class="btn btn-outline-primary"><i class="bx bx-chat me-2"></i> Conversation</a>
 
 
             <!-- Modal for Adding User -->
@@ -32,14 +30,14 @@
                         </div>
                         <div class="modal-body">
                             <!-- Form to Add a New User -->
-                            <form action="" method="post" id="emailForm" autocomplete="off">
+                            <form action="" method="post" id="emailForm">
                                 <div class="mb-3 form-floating">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required autocomplete="off">
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
                                     <label for="email">Email</label>
                                 </div>
                                 <div id="emailFeedback"></div>
                                 <div class="mb-0 d-flex justify-content-between">
-                                    <input type="submit" value="Send Request" class="btn btn-primary me-2" name="send-request-btn" id="sendRequestBtn" >
+                                    <input type="submit" value="Send Request" class="btn btn-primary me-2" name="send-request-btn" id="sendRequestBtn">
                                     <button type="button" class="btn btn-primary" id="inviteFriendBtn">Invite a Friend</button>
                                 </div>
                             </form>
@@ -55,36 +53,46 @@
                 $plan = $userInfo['plan'];
                 $userEmail = $userInfo['email'];
 
-                $email = $_POST['email'];
-                // Get user's plan
-                $get_user_plan = $db->query("SELECT plan FROM users WHERE email = '$userEmail'");
-                $user_plan = $get_user_plan->fetch_assoc()['plan'];
-            
-                // Set user limit based on plan
-                $user_limit = ($user_plan == 'basic') ? 5 : (($user_plan == 'standard') ? 10 : PHP_INT_MAX);
-            
-                // Get current number of users in the project
-                $get_project_users = $db->query("SELECT COUNT(*) as count FROM project_requests WHERE project_id = '$project_id' AND status != 'Rejected'");
-                $project_users_count = $get_project_users->fetch_assoc()['count'];
-            
-                $checkEmail = $db->query("SELECT * FROM project_requests WHERE project_id = '$project_id' AND email = '$email' ");
-                if($checkEmail->num_rows){
-                    echo "<script>swal('Error', 'Request Already Sent', 'error');</script>";
-                } elseif ($project_users_count >= $user_limit) {
-                    echo "<script>swal('Error', 'User limit reached for your plan. Please upgrade to add more users.', 'error');</script>";
+                // Get the email from POST and sanitize it
+                $email = trim($_POST['email']);
+                
+                // Check if user is trying to add themselves
+                if ($email === $userEmail) {
+                    echo "<script>swal('Error', 'You cannot add yourself to the project', 'error');</script>";
                 } else {
-                    $insert = $db->query("INSERT INTO project_requests (project_id, email, status, ownerEmail) VALUES ('$project_id', '$email', 'Pending', '$userEmail') ");
-                    if($insert){
-                        echo "<script>swal('Success', 'Request Sent', 'success');</script>";
-            
-                        $notice_message = "$userName sent you an invite to join the $project_name";
-                        $type = "Project";
-                        $insert_notification = $db->query("INSERT INTO notice (userEmail, message, type) VALUES ('$email', '$notice_message', '$type') ");
+                    // Check if request already exists
+                    $checkEmail = $db->query("SELECT * FROM project_requests WHERE project_id = '$project_id' AND email = '$email' ");
+                    
+                    if($checkEmail->num_rows){
+                        echo "<script>swal('Error', 'Request Already Sent', 'error');</script>";
                     } else {
-                        echo "<script>swal('Error', '" . $db->error . "', 'error');</script>";
+                        // Get user's plan
+                        $get_user_plan = $db->query("SELECT plan FROM users WHERE email = '$userEmail'");
+                        $user_plan = $get_user_plan->fetch_assoc()['plan'];
+                    
+                        // Set user limit based on plan
+                        $user_limit = ($user_plan == 'basic') ? 5 : (($user_plan == 'standard') ? 10 : PHP_INT_MAX);
+                    
+                        // Get current number of users in the project
+                        $get_project_users = $db->query("SELECT COUNT(*) as count FROM project_requests WHERE project_id = '$project_id' AND status != 'Rejected'");
+                        $project_users_count = $get_project_users->fetch_assoc()['count'];
+                        
+                        if ($project_users_count >= $user_limit) {
+                            echo "<script>swal('Error', 'User limit reached for your plan. Please upgrade to add more users.', 'error');</script>";
+                        } else {
+                            $insert = $db->query("INSERT INTO project_requests (project_id, email, status, ownerEmail) VALUES ('$project_id', '$email', 'Pending', '$userEmail') ");
+                            if($insert){
+                                echo "<script>swal('Success', 'Request Sent', 'success');</script>";
+                    
+                                $notice_message = "$userName sent you an invite to join the $project_name";
+                                $type = "Project";
+                                $insert_notification = $db->query("INSERT INTO notice (userEmail, message, type) VALUES ('$email', '$notice_message', '$type') ");
+                            } else {
+                                echo "<script>swal('Error', '" . $db->error . "', 'error');</script>";
+                            }
+                        }
                     }
                 }
-            
             }
             ?>
 
@@ -184,7 +192,7 @@
 </div>
 
 <script>
-document.getElementById('inviteFriendBtn').addEventListener('click', function() {
+    document.getElementById('inviteFriendBtn').addEventListener('click', function() {
     var email = document.getElementById('email').value;
     if (email) {
         fetch('project-send-invite.php', {
@@ -257,31 +265,53 @@ document.getElementById('inviteFriendBtn').addEventListener('click', function() 
         });
     }
 });
+</script>
 
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    var emailInput = document.getElementById('email');
-    var sendRequestBtn = document.getElementById('sendRequestBtn');
-    var emailFeedback = document.getElementById('emailFeedback');
-
-    // Debounce function to prevent too frequent calls
-    function debounce(func, delay) {
-        let timeoutId;
-        return function() {
-            const context = this;
-            const args = arguments;
-            clearTimeout(timeoutId);
-            timeoutId = setTimeout(() => {
-                func.apply(context, args);
-            }, delay);
-        };
-    }
-
-    // Email validation function
-    function validateEmail() {
-        var email = emailInput.value.trim();
+    const emailInput = document.getElementById('email');
+    const sendRequestBtn = document.getElementById('sendRequestBtn');
+    const inviteFriendBtn = document.getElementById('inviteFriendBtn');
+    const emailForm = document.getElementById('emailForm');
+    
+    // Ensure the Send Request button is never disabled
+    if (sendRequestBtn) {
+        // Remove any disabled attribute that might be set
+        sendRequestBtn.removeAttribute('disabled');
         
-        if (email) {
-            fetch('project-addUser-check-email.php', {
+        // Override any styles that might make it appear disabled
+        sendRequestBtn.style.opacity = "1";
+        sendRequestBtn.style.cursor = "pointer";
+    }
+    
+    // Only validate on form submission, not on input
+    if (emailForm) {
+        emailForm.addEventListener('submit', function(event) {
+            const email = emailInput.value.trim();
+            if (!email) {
+                event.preventDefault();
+                document.getElementById('emailFeedback').innerHTML = '<div class="alert alert-danger">Please enter an email address</div>';
+            }
+        });
+    }
+    
+    // Invite friend function
+    if (inviteFriendBtn) {
+        inviteFriendBtn.addEventListener('click', function() {
+            const email = emailInput.value.trim();
+            
+            if (!email) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Email Required',
+                    text: 'Please enter an email address.',
+                    confirmButtonColor: '#3085d6'
+                });
+                return;
+            }
+            
+            // Send the invitation
+            fetch('project-send-invite.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
@@ -290,28 +320,32 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => response.json())
             .then(data => {
-                emailFeedback.innerHTML = data.message;
-                
-                // Enable or disable send request button based on email validation
-                sendRequestBtn.disabled = !data.canSend;
+                if (data.success) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Invitation Sent',
+                        text: 'Your friend has been invited to join the project!',
+                        confirmButtonColor: '#3085d6'
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Failed to send invitation: ' + data.message,
+                        confirmButtonColor: '#d33'
+                    });
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
-                emailFeedback.innerHTML = "<div class='alert alert-danger'>Error checking email</div>";
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'An error occurred while sending the invitation.',
+                    confirmButtonColor: '#d33'
+                });
             });
-        } else {
-            emailFeedback.innerHTML = '';
-            sendRequestBtn.disabled = true;
-        }
+        });
     }
-
-    // Use debounce with blur event to validate after user finishes typing
-    emailInput.addEventListener('blur', debounce(validateEmail, 500));
-
-    // Optional: Clear feedback when user starts typing again
-    emailInput.addEventListener('input', function() {
-        emailFeedback.innerHTML = '';
-        sendRequestBtn.disabled = true;
-    });
 });
 </script>

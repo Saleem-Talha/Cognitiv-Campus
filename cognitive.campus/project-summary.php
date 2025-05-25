@@ -1,16 +1,11 @@
 <?php include_once('includes/header.php'); ?>
-<?php include_once('includes/db-connect.php'); 
+<?php 
+include_once('includes/db-connect.php'); 
 include_once('includes/utils.php');
-
-
 
 // Get project ID from URL
 $encodedProjectId = isset($_GET['project-id']) ? $_GET['project-id'] : '';
-
 $project_id = decodeId($encodedProjectId);
-
-
-
 
 // Fetch project details
 $project_query = "SELECT * FROM projects WHERE id = ?";
@@ -70,9 +65,21 @@ $notes_result = $stmt->get_result();
                                         </div>
                                     </div>
                                     <p class="mt-3"><i class="bx bx-file me-2"></i><strong>Project File:</strong> 
-                                        <a class="ms-2" href="<?php echo htmlspecialchars($project['project_file']); ?>" download class="btn btn-sm btn-outline-primary">
-                                            <?php echo basename($project['project_file']); ?> <i class="ms-2 bx bx-download"></i>
-                                        </a>
+                                        <?php
+                                            $projectFile = htmlspecialchars($project['project_file']);
+                                            $projectFilePath = "projects/" . basename($projectFile);
+                                            if (file_exists($projectFilePath)) {
+                                        ?>
+                                            <a class="ms-2 btn btn-sm btn-outline-primary" href="<?php echo $projectFilePath; ?>" download>
+                                                <?php echo basename($projectFile); ?> <i class="ms-2 bx bx-download"></i>
+                                            </a>
+                                        <?php
+                                            } else {
+                                        ?>
+                                            <span class="text-danger">Project file not found.</span>
+                                        <?php
+                                            }
+                                        ?>
                                     </p>
                                     <h6 class="mt-4 mb-3"><i class="bx bx-notepad me-2"></i>README:</h6>
                                     <pre class="bg-light p-3 rounded"><?php echo htmlspecialchars($project['readme']); ?></pre>
@@ -88,11 +95,27 @@ $notes_result = $stmt->get_result();
                                                 <div class="col-md-6 mb-4">
                                                     <div class="card h-100">
                                                         <div class="card-body">
-                                                            <h6 class="card-title"><i class="bx bx-git-branch me-2"></i><?php echo htmlspecialchars($branch['branch_file']); ?></h6>
+                                                            <h6 class="card-title">
+                                                                <i class="bx bx-git-branch me-2"></i>
+                                                                <?php echo htmlspecialchars($branch['branch_file']); ?>
+                                                            </h6>
                                                             <p class="card-text"><?php echo htmlspecialchars($branch['description']); ?></p>
-                                                            <a href="projects/<?php echo htmlspecialchars($branch['branch_file']); ?>" download class="btn btn-sm btn-outline-primary">
-                                                                Download Branch File <i class="ms-2 bx bx-download"></i>
-                                                            </a>
+                                                            <?php
+                                                                // Ensure the file exists before showing download link
+                                                                $branchFile = htmlspecialchars($branch['branch_file']);
+                                                                $branchFilePath = "projects/" . $branchFile;
+                                                                if (file_exists($branchFilePath)) {
+                                                            ?>
+                                                                <a href="<?php echo $branchFilePath; ?>" download class="btn btn-sm btn-outline-primary">
+                                                                    Download Branch File <i class="ms-2 bx bx-download"></i>
+                                                                </a>
+                                                            <?php
+                                                                } else {
+                                                            ?>
+                                                                <span class="text-danger">Branch file not found.</span>
+                                                            <?php
+                                                                }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>

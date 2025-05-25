@@ -205,7 +205,7 @@ input:checked + .toggle-slider:before {
                             <h5 class="mb-0">
                                 <i class='bx bx-bot text-primary me-2'></i>Cognitive AI Assistant
                                 <label class="toggle-switch">
-                                    <input type="checkbox" id="contextMode">
+                                    <input type="checkbox" id="contextMode" onchange="toggleGenerateButton()">
                                     <span class="toggle-slider"></span>
                                 </label>
                             </h5>
@@ -234,6 +234,13 @@ input:checked + .toggle-slider:before {
                                   <button id="generate-image-btn" class="btn btn-outline-primary">
                                         <i class='bx bx-image-alt me-1'></i> Generate Image
                                   </button>
+                                  <script>
+                                      function toggleGenerateButton() {
+                                          const contextMode = document.getElementById('contextMode');
+                                          const generateButton = document.getElementById('generate-image-btn');
+                                          generateButton.disabled = contextMode.checked;
+                                      }
+                                  </script>
                                   <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
                                   <button onclick="handleMessageSend()" class="btn btn-primary">
                                         <i class='bx bx-send me-1'></i> Send

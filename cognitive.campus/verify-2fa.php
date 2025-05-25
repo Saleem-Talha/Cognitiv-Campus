@@ -72,7 +72,6 @@ if (isset($_POST['otp'])) {
     }
 }
 
-// Rest of the HTML and JavaScript code remains the same...
 ?>
 
 <!DOCTYPE html>
@@ -215,12 +214,7 @@ if (isset($_POST['otp'])) {
                             Verify 2FA
                         </button>
 
-                        <div class="text-center">
-                            Didn't receive the code?
-                            <a href="forget_password.php" class="text-primary">
-                                Resend 2FA
-                            </a>
-                        </div>
+                        
                     </form>
 
                     <!-- Back to login -->

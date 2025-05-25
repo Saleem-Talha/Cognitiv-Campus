@@ -25,8 +25,6 @@
     </div>
   </div>
 </div>
-
-<!-- Add this style section in your head tag or stylesheet -->
 <style>
 .quote-container {
     position: relative;
@@ -52,7 +50,6 @@
     transform: translateY(0);
 }
 
-/* Adjust avatar and name alignment */
 .avatar img {
     object-fit: cover;
 }
@@ -62,8 +59,6 @@
     width: 100%;
 }
 </style>
-
-<!-- Add this script section at the end of your body tag -->
 <script>
 const quotes = [
     {
@@ -95,18 +90,15 @@ function displayQuote() {
     
     // Add fade-out class
     quoteElement.classList.add('fade-out');
-    
     // Wait for fade-out animation to complete
     setTimeout(() => {
         // Update quote text
         currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
         const quote = quotes[currentQuoteIndex];
         quoteElement.innerHTML = `"${quote.text}" - ${quote.author}`;
-        
         // Remove fade-out and add fade-in
         quoteElement.classList.remove('fade-out');
         quoteElement.classList.add('fade-in');
-        
         // Remove fade-in class after animation completes
         setTimeout(() => {
             quoteElement.classList.remove('fade-in');

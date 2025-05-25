@@ -337,7 +337,7 @@ function copySummary(elementId) {
             // Disable button and add loader
             submitBtn.disabled = true;
             submitBtn.innerHTML = `
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="spinner-border spinner-border-sm mx-2" role="status" aria-hidden="true"></span>
                 Summarizing...
             `;
 

@@ -852,3 +852,185 @@ Output: The developers of Cognitive Campus are not specified in the information 
 Command: python.exe ai-context-chatbot-api.py "who are the developers of cognitive campus" "umersaeed999@gmail.com" false
 Output: The developers of Cognitive Campus are Anila Salman (Head of UI/UX), Saleem Talha (Lead Developer), and Muhammad Saad (Backend Developer).
 
+Command: python.exe ai-chatbot-api.py "Hello how are you" "new@gmail.com" false
+Output: Hello! I'm just a computer program so I don't have feelings, but I'm here to help you. How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what is your name" "new@gmail.com" false
+Output: I am an AI assistant for Cognitive Campus. How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "new@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "Hello can you explain 0 1 knab sack in a paragraph" "newuser@gmail.com" false
+Output: The 0-1 knapsack problem is a classic optimization problem in computer science where the goal is to maximize the total value of items that can be placed into a knapsack with a limited weight capacity. Each item has a weight and a value associated with it, and the knapsack can only hold a certain amount of weight. The challenge is to determine the combination of items to include in the knapsack that maximizes the total value without exceeding the weight capacity. This problem is considered NP-hard, meaning that there is no known polynomial time algorithm to solve it optimally, and various approaches such as dynamic programming or greedy algorithms are used to find approximate solutions.
+
+Command: python.exe ai-chatbot-api.py "give me cpp code that says hello world" "newuser@gmail.com" false
+Output: Sure, here is a simple C++ code that prints "Hello, World!" to the console:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+You can compile and run this code in a C++ compiler to see the output "Hello, World!" displayed on the screen.
+
+Command: python.exe ai-context-chatbot-api.py "hello what is your name" "newuser@gmail.com" false
+Output: Hello! I am the Cognitive Campus assistant. How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "who are the developer of this platform" "newuser@gmail.com" false
+Output: The developers of the platform are not specified in the information provided.
+
+Command: python.exe ai-context-chatbot-api.py "Name the developers" "newuser@gmail.com" false
+Output: The developers are:
+1. Anila Salman - Head of UI/UX
+2. Saleem Talha - Lead Developer
+3. Muhammad Saad - Backend Developer
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "newuser@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what subscriptions plans are availeble her" "newuser@gmail.com" false
+Output: The available subscription plans are Basic (Free/Lifetime), Standard ($19.99/month), and Premium ($49.99/month).
+
+Command: python.exe ai-chatbot-api.py "can you explain 0 1 knap sack in a paragraph" "newtest@gmail.com" false
+Output: The 0/1 knapsack problem is a classic optimization problem in computer science where the goal is to maximize the total value of items that can be placed into a knapsack with a limited weight capacity. Each item has a weight and a value associated with it, and the knapsack can only hold a certain amount of weight. The challenge is to determine the optimal combination of items to include in the knapsack that maximizes the total value without exceeding the weight capacity. The "0/1" in the problem's name refers to the fact that items cannot be divided, meaning either an item is included in full or not at all. This problem is commonly solved using dynamic programming algorithms to efficiently find the optimal solution.
+
+Command: python.exe ai-chatbot-api.py "write a cpp code for hello world" "newtest@gmail.com" false
+Output: Sure, here is a simple C++ code that prints "Hello, World!" to the console:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+You can copy and paste this code into a C++ compiler and run it to see the output "Hello, World!" displayed on the screen.
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "newtest@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what is your name" "newtest@gmail.com" false
+Output: My name is Cognitive Campus. How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "what are the features of this platform" "newtest@gmail.com" false
+Output: The core features of Cognitive Campus include Subjects/Courses Management, Project Collaboration, Advanced Note-Taking, Schedule Management, AI-Powered Assistant, Comprehensive Dashboard, Google Classroom Integration, Task Management, Grade Tracking, Team Collaboration, and Student Analytics.
+
+Command: python.exe ai-chatbot-api.py "Hello\" "aneylasalman21@gmail.com" false
+Output: 
+Command: python.exe ai-chatbot-api.py "Hello" "aneylasalman21@gmail.com" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "What are the core concepts of OOP" "aneylasalman21@gmail.com" false
+Output: Object-oriented programming (OOP) is a programming paradigm that is based on the concept of "objects," which can contain data in the form of fields (attributes or properties) and code in the form of procedures (methods or functions). The core concepts of OOP include:
+
+1. Encapsulation: Encapsulation is the bundling of data (attributes) and methods (functions) that operate on that data into a single unit known as an object. This helps to hide the internal details of an object and only expose the necessary functionality to the outside world.
+
+2. Inheritance: Inheritance allows a class (or object) to inherit properties and methods from another class (or object). This promotes code reusability and allows for the creation of hierarchies of classes.
+
+3. Polymorphism: Polymorphism allows objects of different classes to be treated as objects of a common superclass. This enables code to be written in a more generic way, allowing for flexibility and extensibility.
+
+4. Abstraction: Abstraction in... [Response truncated]
+
+Command: python.exe ai-chatbot-api.py "What are the core subject of Computer Science" "aneylasalman21@gmail.com" false
+Output: Computer science is a vast field that covers a wide range of subjects and topics. Some of the core subjects of computer science include:
+
+1. Algorithms and Data Structures: The study of algorithms and data structures is fundamental to computer science. Algorithms are step-by-step procedures for solving problems, while data structures are ways of organizing and storing data efficiently.
+
+2. Programming Languages: Computer science involves the study of various programming languages and their syntax, semantics, and applications. Understanding different programming languages is essential for writing software and developing applications.
+
+3. Computer Architecture: Computer architecture focuses on the design and organization of computer systems, including hardware components such as processors, memory, and input/output devices.
+
+4. Operating Systems: Operating systems are software that manage computer hardware resources and provide services for computer programs. Understanding operating syst... [Tokens Ended for this response]
+
+Command: python.exe ai-chatbot-api.py "What is cisco packet tracer" "aneylasalman21@gmail.com" false
+Output: Cisco Packet Tracer is a network simulation tool developed by Cisco Systems that allows users to create network topologies, configure devices, and simulate network behavior. It is commonly used for educational purposes to teach networking concepts and practice hands-on skills in a virtual environment.
+
+With Cisco Packet Tracer, users can design and configure networks using a variety of networking devices such as routers, switches, firewalls, and PCs. They can also simulate network traffic, test connectivity, troubleshoot network issues, and observe how data packets flow through the network.
+
+Packet Tracer provides a user-friendly interface that allows users to drag and drop network devices onto a workspace, connect them with cables, and configure their settings. It supports a wide range of networking protocols and features, making it a versatile tool for learning and practicing networking concepts.
+
+Overall, Cisco Packet Tracer is a valuable tool for students, educators, and networking... [Tokens Ended for this response]
+
+Command: python.exe ai-chatbot-api.py "hello" "aneylasalman21@gmail.com" false
+Output: You have reached the chat limit for basic plan.
+
+Command: python.exe ai-chatbot-api.py "hello" "aneylasalman21@gmail.com" false
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-chatbot-api.py "New Chat Started" "aneylasalman21@gmail.com" true
+Output: Hello! How can I assist you today?
+
+Command: python.exe ai-context-chatbot-api.py "What is your name" "aneylasalman21@gmail.com" false
+Output: I am Cognitive Campus, your student productivity assistant.
+
+Command: python.exe ai-context-chatbot-api.py "how can i navigate to subjects page" "aneylasalman21@gmail.com" false
+Output: To navigate to the Subjects page, you can typically find it in the main menu or navigation bar of the platform. Look for a tab or link labeled "Subjects" or "Courses" and click on it to access the Subjects page where you can manage your courses and related information.
+
+Command: python.exe ai-context-chatbot-api.py "what is an erd" "aneylasalman21@gmail.com" false
+Output: An ERD stands for Entity-Relationship Diagram. It is a visual representation of the relationships between entities in a database, showing how data is connected and organized.
+
+Command: python.exe ai-context-chatbot-api.py "Hello what can you tell me about Cognitive Campus" "saleemtalha967@gmail.com" false
+Output: Cognitive Campus is an advanced student productivity platform that uses AI to enhance learning, project management, and personal organization. It integrates with Google Classroom to provide a comprehensive academic management system. If you have specific questions or need more details, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "What is its mission" "saleemtalha967@gmail.com" false
+Output: Cognitive Campus' mission is to empower students with intelligent productivity tools and personalized learning experiences.
+
+Command: python.exe ai-context-chatbot-api.py "Who are the developers of cognitive campus" "saleemtalha967@gmail.com" false
+Output: The developers of Cognitive Campus are as follows:
+- Anila Salman: Head of UI/UX
+- Saleem Talha: Lead Developer
+- Muhammad Saad: Backend Developer
+
+You can reach out to them via email at the addresses provided for any specific queries or feedback.
+
+Command: python.exe ai-context-chatbot-api.py "give me the email address of Saad" "saleemtalha967@gmail.com" false
+Output: I'm sorry, I can only provide information about the Cognitive Campus platform and its features. Please ask something related to our educational services.
+
+Command: python.exe ai-context-chatbot-api.py "Give me the email address of one of the developers his name is Muhammad Saad" "saleemtalha967@gmail.com" false
+Output: The email address of Muhammad Saad, the Backend Developer, is 210946@students.au.edu.pk.
+
+Command: python.exe ai-context-chatbot-api.py "what extra course do I have" "saleemtalha967@gmail.com" false
+Output: I'm sorry, I don't have access to your specific data. You can check the extra courses you have by navigating to the "Extra Courses (User Created)" section on the Cognitive Campus platform where you can create, delete, manage notes, and receive course recommendations for your custom courses.
+
+Command: python.exe ai-context-chatbot-api.py "how many extra courses do i have" "saleemtalha967@gmail.com" false
+Output: I'm sorry, I do not have access to your specific account information. You can check the number of extra courses you have by logging into your Cognitive Campus account and viewing your Courses Management section. If you need further assistance, feel free to ask!
+
+Command: python.exe ai-context-chatbot-api.py "how many uni courses do i have" "saleemtalha967@gmail.com" false
+Output: I'm sorry, without specific user data access, I'm unable to provide the exact number of university courses you have. You can check the Course Management section on the platform to view all your active and inactive courses.
+
+Command: python.exe ai-context-chatbot-api.py "how many uni courses do i have" "saleemtalha967@gmail.com" false
+Output: I'm sorry, I can only provide information about the Cognitive Campus platform and its features. Please ask something related to our educational services.
+
+Command: python.exe ai-context-chatbot-api.py "how many uni courses do I have" "saleemtalha967@gmail.com" false
+Output: For information about the number of university courses you have, please log in to your Cognitive Campus account to view your enrolled courses.
+
+Command: python.exe ai-context-chatbot-api.py "count and tell me the number of notes I have made" "saleemtalha967@gmail.com" false
+Output: Database Error: 1146 (42S02): Table 'talha_db.notes' doesn't exist
+Database error: 1146 (42S02): Table 'talha_db.notes' doesn't exist
+
+Command: python.exe ai-context-chatbot-api.py "count and tell me the number of notes I have made" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'title' in 'field list'
+Database error: 1054 (42S22): Unknown column 'title' in 'field list'
+
+Command: python.exe ai-context-chatbot-api.py "count the course notes that i have made and tell me the number" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'user_email' in 'where clause'
+Database error: 1054 (42S22): Unknown column 'user_email' in 'where clause'
+
+Command: python.exe ai-context-chatbot-api.py "count the course notes that i have made and tell me the number" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'completed' in 'field list'
+Database error: 1054 (42S22): Unknown column 'completed' in 'field list'
+
+Command: python.exe ai-context-chatbot-api.py "count the course notes that i have made and tell me the number" "saleemtalha967@gmail.com" false
+Output: Database Error: 1054 (42S22): Unknown column 'completed' in 'field list'
+Database error: 1054 (42S22): Unknown column 'completed' in 'field list'
+
+Command: python.exe ai-context-chatbot-api.py "count the course notes that i have made and tell me the number" "saleemtalha967@gmail.com" false
+Output: You currently don't have any course notes saved in your Cognitive Campus account. If you need any assistance with creating notes, feel free to ask!
+

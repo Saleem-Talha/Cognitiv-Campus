@@ -1,4 +1,3 @@
-
 <?php include_once('includes/header.php'); ?>
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
@@ -154,12 +153,16 @@
                                                     $insights[] = array(
                                                         'id' => $insightId,
                                                         'text' => $insight['insight_text'],
-                                                        'date' => $insight['created_at']
+                                                        'date' => $insight['created_at'],
+                                                        'dbId' => $insight['id']
                                                     );
                                                     
                                                     echo '<div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">';
                                                     echo '<div>Generated on: ' . date('Y-m-d H:i', strtotime($insight['created_at'])) . '</div>';
-                                                    echo '<button class="btn btn-sm btn-outline-primary view-insight-btn" data-insight-id="' . $insightId . '">View Insight</button>';
+                                                    echo '<div>';
+                                                    echo '<button class="btn btn-sm btn-primary view-insight-btn me-2" data-insight-id="' . $insightId . '">View Insight</button>';
+                                                    echo '<a href="student-analytics-download_insight_pdf.php?id=' . $insight['id'] . '" class="btn btn-sm btn-outline-primary">Download PDF</a>';
+                                                    echo '</div>';
                                                     echo '</div>';
                                                     
                                                     $counter++;
@@ -205,10 +208,10 @@
 
                     <?php
                         } else {
-                            echo '<div class="alert alert-info">You are not enrolled in any courses yet.</div>';
+                            echo '<div class="alert alert-primary">You are not enrolled in any courses yet.</div>';
                         }
                     } else {
-                        echo '<div class="alert alert-warning">Google Classroom integration is only available for users logged in with Google.</div>';
+                        echo '<div class="alert alert-primary">Google Classroom integration is only available for users logged in with Google.</div>';
                     }
                     ?>
 
@@ -228,7 +231,10 @@
                     </div>
                 </div>
 
+                <?php include_once('student-analytics-schedule.php'); ?>
+                <?php include_once('student-analytics-todo.php'); ?>
                 <div class="container">
+               
                 <?php include_once('dashboard-student-analysis.php'); ?>
                 </div>
                 <?php include_once('includes/footer.php'); ?>
@@ -241,7 +247,7 @@
 
 <?php include_once('includes/footer-links.php'); ?>
 
-<!-- Add JavaScript for handling the fetch grades functionality (keeping only the fetch all grades part) -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch grades button click handler
@@ -327,17 +333,14 @@ const viewButtons = document.querySelectorAll('.view-insight-btn');
             const insightData = insightsData.find(insight => insight.id === insightId);
             
             if (insightData) {
-                // Format the insight text
+                // Format the insight text (simplified, no regex for headings)
                 let formattedText = insightData.text;
-                
-                // Replace headers
-                formattedText = formattedText.replace(/###\s+(.*?)(\n|$)/g, '<h3 class="text-primary mb-3">$1</h3>');
-                formattedText = formattedText.replace(/####\s+(.*?)(\n|$)/g, '<h4 class="text-secondary mb-2">$1</h4>');
-                formattedText = formattedText.replace(/##\s+(.*?)(\n|$)/g, '<h3 class="text-primary mb-3">$1</h3>');
-                formattedText = formattedText.replace(/#\s+(.*?)(\n|$)/g, '<h4 class="text-secondary mb-2">$1</h4>');
                 
                 // Replace bold text
                 formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                
+                // Make headings bold instead of using regex
+                formattedText = formattedText.replace(/(#+)\s+(.*?)(\n|$)/g, '<strong>$2</strong><br>');
                 
                 // Process bullet points
                 formattedText = formattedText.replace(/- (.*?)(\n|$)/g, '<li>$1</li>');

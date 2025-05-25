@@ -128,7 +128,7 @@
                             <?php endif; ?>
 
                             <!-- Form to submit an assignment -->
-                            <h3 class="mb-3">Submit Assignment</h3>
+                        <!--     <h3 class="mb-3">Submit Assignment</h3>
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <form onsubmit="showAlert(event)" action="subject-upload-assignment.php" method="post" enctype="multipart/form-data">
@@ -141,7 +141,7 @@
                                         <button type="submit" class="btn btn-primary">Upload Assignment</button>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <script>
                                 function showAlert(event) {

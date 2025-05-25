@@ -14,7 +14,7 @@
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title mb-0">Saleem Talha</h5>
-                        <p class="card-text text-muted">Lead Developer</p>
+                        
                         <div class="social-icons mt-3">
                             <a href="https://www.linkedin.com/in/muhammad-saleem-talha/" target="_blank" class="text-primary-main mx-2"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/Saleem-Talha" target="_blank" class="text-primary-main mx-2"><i class="fab fa-github"></i></a>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title mb-0">Anila Salman</h5>
-                        <p class="card-text text-muted">UX Designer</p>
+                        
                         <div class="social-icons mt-3">
                             <a href="https://www.linkedin.com/in/anila-salman-48292b282/" target="_blank" class="text-primary-main mx-2"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/anilasalman85" target="_blank" class="text-primary-main mx-2"><i class="fab fa-github"></i></a>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title mb-0">Muhammad Saad</h5>
-                        <p class="card-text text-muted">Backend Developer</p>
+                        
                         <div class="social-icons mt-3">
                             <a href="https://www.linkedin.com/in/muhammad-saad-85b936a8/" target="_blank" class="text-primary-main mx-2"><i class="fab fa-linkedin"></i></a>
                             <a href="#" target="_blank" class="text-primary-main mx-2"><i class="fab fa-github"></i></a>

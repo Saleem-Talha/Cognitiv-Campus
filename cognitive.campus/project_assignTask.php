@@ -183,8 +183,28 @@
                                                 <i class="bx bx-check"></i>
                                             </button>
                                         <?php endif; ?>
+                                        
+                                        
                                     </td>
                                 </tr>
+
+                                <div class="modal fade" id="deleteTaskModal" tabindex="-1" aria-labelledby="deleteTaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteTaskModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this task? This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-sm btn-danger" id="confirmDeleteTask">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
 
                                 <!-- Modal for task details -->
                                 <div class="modal fade" id="taskModal<?php echo $task_id; ?>" tabindex="-1" aria-labelledby="taskModalLabel<?php echo $task_id; ?>" aria-hidden="true">
@@ -254,7 +274,7 @@
                     <div id="branchFields<?php echo $task_id; ?>" style="display: none;">
                         <div class="mb-3">
                             <label for="branchFile<?php echo $task_id; ?>" class="form-label">Branch File</label>
-                            <input type="file" class="form-control" id="branchFile<?php echo $task_id; ?>" name="branchFile">
+                            <input type="file" class="form-control" id="branchFile<?php echo $task_id; ?>" name="branchFile" accept=".zip,.rar">
                         </div>
                         <div class="mb-3">
                             <label for="branchDescription<?php echo $task_id; ?>" class="form-label">Branch Description</label>
@@ -287,6 +307,7 @@
 
 
 <script>
+
 document.addEventListener('DOMContentLoaded', function() {
     // Handle checkbox toggle for branch fields
     const checkboxes = document.querySelectorAll('[id^="addBranch"]');
@@ -325,5 +346,62 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+    
+    // Task deletion handling
+    let taskIdToDelete = null;
+    const deleteButtons = document.querySelectorAll('.delete-task');
+    const deleteModal = new bootstrap.Modal(document.getElementById('deleteTaskModal'));
+    
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            taskIdToDelete = this.getAttribute('data-task-id');
+            deleteModal.show();
+        });
+    });
+    
+    document.getElementById('confirmDeleteTask').addEventListener('click', function() {
+        if (!taskIdToDelete) return;
+        
+        // Create form data
+        const formData = new FormData();
+        formData.append('task_id', taskIdToDelete);
+        formData.append('project_id', <?php echo json_encode($project_id); ?>);
+        
+        // Send delete request to server
+        fetch('project-delete-task.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            deleteModal.hide();
+            
+            // Check response format
+            if (data.startsWith('SUCCESS:')) {
+                // Extract the success message
+                const message = data.substring(8);
+                // Show success message using swal
+                swal('Success', message, 'success')
+                .then(() => {
+                    // Reload the page to reflect changes
+                    location.reload();
+                });
+            } else if (data.startsWith('ERROR:')) {
+                // Extract the error message
+                const errorMessage = data.substring(6);
+                swal('Error', errorMessage, 'error');
+            } else {
+                // Unknown response format
+                swal('Error', 'Unexpected response from server', 'error');
+            }
+        })
+        .catch(error => {
+            deleteModal.hide();
+            console.error('Error:', error);
+            swal('Error', 'An error occurred while deleting the task', 'error');
+        });
+    });
 });
+
+
 </script>

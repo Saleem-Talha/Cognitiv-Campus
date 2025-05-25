@@ -11,7 +11,7 @@ function sendTwoFactorAuthEmail($data) {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';              // Specify SMTP server (e.g., smtp.gmail.com)
+        $mail->Host       = 'smtp.gmail.com';              // Specify SMTP server 
         $mail->SMTPAuth   = true;                            // Enable SMTP authentication
         $mail->Username   = 'saleemtalha967@gmail.com';        // SMTP username
         $mail->Password   = 'vwjz biua zfog fqfa';            // SMTP password

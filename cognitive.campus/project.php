@@ -33,7 +33,7 @@
       <div class="modal-body">
         
 
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data" id="addProjectForm">
             <div class="mb-3 form-floating">
                 <input type="text" name="name" class="form-control" placeholder="Enter Name" required accept="application/zip,application/x-rar-compressed">
                 <label for="">Enter Project Name *</label>
@@ -82,11 +82,11 @@
             </div>
            
             <div class="mb-3 form-floating">
-                <input type="date" name="start_date" class="form-control" title="Start Date" required>
+                <input type="date" name="start_date" class="form-control" title="Start Date" required id="start_date">
                 <label for="">Choose Start Date *</label>
             </div>
             <div class="mb-3 form-floating">
-                <input type="date" name="end_date" class="form-control" title="End Date">
+                <input type="date" name="end_date" class="form-control" title="End Date" id="end_date">
                 <label for="">Choose End Date</label>
             </div>
             <input type="submit" value="Add" class="btn btn-primary" name="add-project">
@@ -116,38 +116,57 @@
             $project_file = $_FILES['file']['name'];
             $project_file_tmp = $_FILES['file']['tmp_name'];
 
-            // Get the current number of projects for this user
-            $project_count_query = $db->query("SELECT COUNT(*) as count FROM projects WHERE ownerEmail = '$userEmail'");
-            $project_count = $project_count_query->fetch_assoc()['count'];
-
-            // Define project limits based on plan
-            $project_limit = ($plan == 'basic') ? 5 : (($plan == 'standard') ? 15 : PHP_INT_MAX);
-
-            if ($project_count < $project_limit) {
-                $insert = $db->query("INSERT INTO projects (name, start_date, end_date, status, course_id, ownerEmail, courseType, project_file) VALUES ('$name', '$start_date', '$end_date', '$status', '$courseId', '$userEmail', '$courseType', '$project_file')");
-
-                if ($insert) {
-                    echo '<script>window.location.href = "project.php";</script>';
-                    move_uploaded_file($project_file_tmp, 'projects/'.$project_file);
-
-                    $notice_message = "A new project has been Created : " . $name;
-                    $type = "Project";
-                    $insert_notification = $db->query("INSERT INTO notice (userEmail, message, type) VALUES ('$userEmail', '$notice_message', '$type')");
-                } else {
-                    echo '<script>alert("Error: '.$db->error.'");</script>';
+            // Validate start and end date
+            $date_error = '';
+            if (!empty($end_date)) {
+                if ($start_date > $end_date) {
+                    $date_error = "Start date cannot be after deadline. Please select valid dates.";
+                } elseif ($end_date < $start_date) {
+                    $date_error = "Deadline cannot be before start date. Please select valid dates.";
                 }
-            } else {
+            }
+
+            if ($date_error) {
                 echo '<script>
                     swal({
-                        title: "Project Limit Reached",
-                        text: "You have reached the maximum number of projects allowed for your plan. Please upgrade to add more projects.",
-                        icon: "warning",
+                        title: "Invalid Dates",
+                        text: "'.$date_error.'",
+                        icon: "error",
                         button: "OK",
                     });
                 </script>';
+            } else {
+                // Get the current number of projects for this user
+                $project_count_query = $db->query("SELECT COUNT(*) as count FROM projects WHERE ownerEmail = '$userEmail'");
+                $project_count = $project_count_query->fetch_assoc()['count'];
+
+                // Define project limits based on plan
+                $project_limit = ($plan == 'basic') ? 5 : (($plan == 'standard') ? 15 : PHP_INT_MAX);
+
+                if ($project_count < $project_limit) {
+                    $insert = $db->query("INSERT INTO projects (name, start_date, end_date, status, course_id, ownerEmail, courseType, project_file) VALUES ('$name', '$start_date', '$end_date', '$status', '$courseId', '$userEmail', '$courseType', '$project_file')");
+
+                    if ($insert) {
+                        echo '<script>window.location.href = "project.php";</script>';
+                        move_uploaded_file($project_file_tmp, 'projects/'.$project_file);
+
+                        $notice_message = "A new project has been Created : " . $name;
+                        $type = "Project";
+                        $insert_notification = $db->query("INSERT INTO notice (userEmail, message, type) VALUES ('$userEmail', '$notice_message', '$type')");
+                    } else {
+                        echo '<script>alert("Error: '.$db->error.'");</script>';
+                    }
+                } else {
+                    echo '<script>
+                        swal({
+                            title: "Project Limit Reached",
+                            text: "You have reached the maximum number of projects allowed for your plan. Please upgrade to add more projects.",
+                            icon: "warning",
+                            button: "OK",
+                        });
+                    </script>';
+                }
             }
-
-
         }
         ?>
     
@@ -533,6 +552,34 @@ $(document).ready(function(){
                 $('#uniCourseSelect').hide();
                 $('#extraCourseSelect').show();
              }
+    });
+
+    // Date validation for project creation
+    $('#addProjectForm').on('submit', function(e){
+        var start = $('#start_date').val();
+        var end = $('#end_date').val();
+        if (start && end) {
+            if (start > end) {
+                e.preventDefault();
+                swal({
+                    title: "Invalid Dates",
+                    text: "Start date cannot be after deadline. Please select valid dates.",
+                    icon: "error",
+                    button: "OK",
+                });
+                return false;
+            }
+            if (end < start) {
+                e.preventDefault();
+                swal({
+                    title: "Invalid Dates",
+                    text: "Deadline cannot be before start date. Please select valid dates.",
+                    icon: "error",
+                    button: "OK",
+                });
+                return false;
+            }
+        }
     });
 });
 </script>

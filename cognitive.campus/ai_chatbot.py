@@ -328,7 +328,7 @@ def get_response(user_input, user_email, start_new_chat=False):
             
             # Maximum response length trimming (optional)
             if len(ai_response) > 1000:
-                ai_response = ai_response[:1000] + "... [Response truncated]"
+                ai_response = ai_response[:1000] + "... [Tokens Ended for this response]"
             
             # Save the processed AI response
             save_chat_message(session_id, 'ai', ai_response)

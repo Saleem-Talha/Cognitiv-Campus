@@ -9,6 +9,14 @@ if (!file_exists($upload_dir)) {
 
 $error = '';
 $email_error = '';
+$phone_error = '';
+
+function is_valid_phone($phone) {
+    // Accepts numbers, spaces, dashes, parentheses, and optional leading +
+    // Must be at least 7 digits
+    $digits = preg_replace('/\D/', '', $phone);
+    return preg_match('/^\+?[\d\s\-\(\)]{7,20}$/', $phone) && strlen($digits) >= 7 && strlen($digits) <= 15;
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
@@ -27,11 +35,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result->num_rows > 0) {
         $email_error = "User exists with this email";
     } else {
+        // Phone number validation
+        if (!is_valid_phone($phone_number)) {
+            $phone_error = "Please enter a valid phone number.";
+        }
         // Password validation
         if ($password !== $confirm_password) {
             $error = "Passwords do not match.";
         } elseif (strlen($password) < 8 || !preg_match('/[a-z]/', $password) || !preg_match('/[\d\W\s]/', $password)) {
             $error = "Password must be at least 8 characters long, contain at least one lowercase letter, and one number, symbol, or whitespace character.";
+        } elseif ($phone_error) {
+            // Do nothing, error already set
         } else {
             $password = password_hash($password, PASSWORD_DEFAULT);
 
@@ -55,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
             }
 
-            if (!$error) {
+            if (!$error && !$phone_error) {
                 $stmt = $db->prepare("INSERT INTO users (email, name, password, phone_number, picture, auth_type) VALUES (?, ?, ?, ?, ?, 'session')");
                 $stmt->bind_param("sssss", $email, $name, $password, $phone_number, $picture);
 
@@ -217,6 +231,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php if ($error): ?>
                         <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
                     <?php endif; ?>
+                    <?php if ($phone_error): ?>
+                        <div class="alert alert-danger"><?php echo htmlspecialchars($phone_error); ?></div>
+                    <?php endif; ?>
 
                     <!-- Registration Form -->
                     <form id="formAuthentication" action="register.php" method="POST" enctype="multipart/form-data">
@@ -263,8 +280,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" name="phone_number" 
-                                placeholder="Enter your phone number" required />
+                            <input type="tel" class="form-control <?php echo $phone_error ? 'is-invalid' : ''; ?>" id="phone" name="phone_number" 
+                                placeholder="Enter your phone number" required pattern="^\+?[\d\s\-\(\)]{7,20}$" maxlength="20" />
+                            <?php if ($phone_error): ?>
+                                <div class="error-text text-danger mt-2"><?php echo htmlspecialchars($phone_error); ?></div>
+                            <?php endif; ?>
+                            <small class="text-muted">Enter a valid phone number (7-15 digits, may include +, spaces, dashes, parentheses).</small>
                         </div>
 
                         <div class="mb-3">
@@ -282,6 +303,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </label>
                             </div>
                         </div>
+
+                        <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy & Terms</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <?php 
+                                    // Include the privacy policy content
+                                    if(file_exists('register-privacy-policy.php')) {
+                                        include 'register-privacy-policy.php';
+                                    } else {
+                                        // Fallback content in case the file doesn't exist
+                                        echo '<div class="alert alert-warning">
+                                                <h4>Privacy Policy & Terms of Service</h4>
+                                                <p>The privacy policy content file (register-privacy-policy.php) could not be found. Please contact the administrator.</p>
+                                            </div>';
+                                    }
+                                    ?>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-sm btn-primary" id="acceptTermsBtn" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                         <button type="submit" class="btn btn-primary w-100 mb-3" id="signup-btn" disabled>Sign up</button>
                     </form>
@@ -324,6 +374,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             return password.length >= 8 && /[a-z]/.test(password) && /[\d\W\s]/.test(password);
         }
 
+        // Phone number validation function
+        function validatePhone(phone) {
+            // Accepts numbers, spaces, dashes, parentheses, and optional leading +
+            // Must be at least 7 digits, max 15
+            const digits = phone.replace(/\D/g, '');
+            return /^\+?[\d\s\-\(\)]{7,20}$/.test(phone) && digits.length >= 7 && digits.length <= 15;
+        }
+
         // Form validation function
         function validateForm() {
             const password = $('#password').val();
@@ -331,6 +389,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             const termsChecked = $('#terms-conditions').is(':checked');
             const passwordsMatch = password === confirmPassword;
             const isPasswordValid = validatePassword(password);
+            const phone = $('#phone').val();
+            const isPhoneValid = validatePhone(phone);
 
             // Show/hide password match feedback
             if (confirmPassword) {
@@ -343,18 +403,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
             }
 
+            // Phone validation feedback
+            if (phone) {
+                if (isPhoneValid) {
+                    $('#phone').removeClass('is-invalid').addClass('is-valid');
+                } else {
+                    $('#phone').removeClass('is-valid').addClass('is-invalid');
+                }
+            } else {
+                $('#phone').removeClass('is-valid is-invalid');
+            }
+
             // Enable/disable submit button
             $('#signup-btn').prop('disabled', 
                 !termsChecked || 
                 !passwordsMatch || 
                 !isPasswordValid || 
                 !password || 
-                !confirmPassword
+                !confirmPassword ||
+                !isPhoneValid || 
+                !phone
             );
         }
 
         // Input event listeners
-        $('#password, #confirm-password').on('input', function() {
+        $('#password, #confirm-password, #phone').on('input', function() {
             const password = $('#password').val();
             const isValid = validatePassword(password);
             

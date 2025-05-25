@@ -1,9 +1,9 @@
 <?php
-// dashboard-get-grades.php
+
 header('Content-Type: application/json');
 
 require_once 'includes/validation.php';
-require_once 'includes/db-connect.php'; // Make sure this is the correct path to your db-connect file
+require_once 'includes/db-connect.php'; 
 
 if (!isAuthenticated()) {
     http_response_code(401);
@@ -12,7 +12,7 @@ if (!isAuthenticated()) {
 }
 
 $userInfo = getUserInfo();
-$userEmail = $userInfo['email']; // Assuming getUserInfo() returns user email
+$userEmail = $userInfo['email']; 
 
 function getUserGradesFromDB($db, $userEmail) {
     try {

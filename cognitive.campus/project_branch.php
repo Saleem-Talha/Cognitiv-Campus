@@ -19,7 +19,7 @@
                             <!-- Form to Add New Branch -->
                             <form action="" method="post" id="branchForm" enctype="multipart/form-data">
                                 <div class="mb-3 form-floating">
-                                    <input type="file" name="branchFile" id="branchFile" class="form-control" required>
+                                    <input type="file" name="branchFile" id="branchFile" class="form-control" required accept=".zip,.rar">
                                     <label for="branchFile">Branch File</label>
                                 </div>
                                 <div class="mb-3">

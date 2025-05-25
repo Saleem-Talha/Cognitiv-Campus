@@ -6,12 +6,10 @@ include_once("includes/validation.php");
 $userInfo = getUserInfo();
 $userEmail = $userInfo['email'];
 
-
-
 // Get counts from each table for the current user
 $course_status_query = "SELECT COUNT(*) as count FROM course_status WHERE user_id = ?";
 $own_course_query = "SELECT COUNT(*) as count FROM own_course WHERE userEmail = ?";
-$project_query = "SELECT COUNT(*) as count FROM projects WHERE ownerEmail = ?";
+$project_query = "SELECT COUNT(*) as count FROM projects WHERE ownerEmail = ? AND status = 'Active'";
 $notes_course_query = "SELECT COUNT(*) as count FROM notes_course WHERE userEmail = ?";
 $notes_project_query = "SELECT COUNT(*) as count FROM notes_project WHERE userEmail = ?";
 
@@ -228,18 +226,15 @@ $project_count = $stmt->get_result()->fetch_assoc()['count'];
     color: #fff;
 }
 
-/* Make cards fill height of their container */
 .card {
     height: 100%;
     min-height: 135px;
 }
 
-/* Ensure consistent spacing in card body */
 .card-body {
     padding: 1.5rem;
 }
 
-/* Responsive text adjustments */
 @media (max-width: 767.98px) {
     .card-title {
         font-size: 1.25rem;
@@ -250,7 +245,6 @@ $project_count = $stmt->get_result()->fetch_assoc()['count'];
     }
 }
 
-/* Handle very small screens */
 @media (max-width: 575.98px) {
     .avatar-sm {
         width: 2rem;

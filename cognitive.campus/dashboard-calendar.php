@@ -158,10 +158,6 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Calendar</title>
-
-       
-    
-
     <style>
         .fc-event {
             cursor: pointer;
@@ -173,9 +169,9 @@ try {
             display: flex;
             align-items: center;
             gap: 8px;
-            border: 2px solid #696cff; /* Border color */
-            background-color: #fff; /* White background */
-            color: #696cff; /* Text color matches the border */
+            border: 2px solid #696cff; 
+            background-color: #fff;
+            color: #696cff; 
         }
 
         .fc-event:hover {
@@ -211,7 +207,7 @@ try {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #696cff; /* Icon matches the border and text */
+            color: #696cff;
         }
 
         .fc-event-title {
@@ -245,7 +241,6 @@ try {
     <!-- Content wrapper -->
     <div class="content-wrapper">
         <!-- Content -->
-        
             <?php if (!empty($errors)): ?>
             <div class="alert alert-danger">
                 <strong>Error loading calendar data:</strong>
@@ -280,10 +275,7 @@ try {
                                     <i class="fas fa-sticky-note" style="color: #696cff;"></i>
                                     <span>Notes</span>
                                 </div>
-                            </div>
-
-                            
-                            
+                            </div> 
                         </div>
                         <div class="card-body">
                             <div id="calendar"></div>
@@ -333,8 +325,6 @@ try {
     const hoverTitle = info.event.title || displayData['Type'] || 'Event';
     info.el.setAttribute('title', hoverTitle);
 },
-
-
 
         eventClick: function(info) {
             // Create standardized modal content
@@ -406,7 +396,7 @@ try {
                         existingAlert.remove();
                     }
                     const alert = document.createElement('div');
-                    alert.className = 'alert alert-info mt-3';
+                    alert.className = 'alert alert-primary mt-3';
                     alert.textContent = 'No events found for the selected period.';
                     calendar.parentNode.insertBefore(alert, calendar.nextSibling);
                 }

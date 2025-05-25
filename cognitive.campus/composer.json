@@ -5,6 +5,7 @@
         "guzzlehttp/psr7": "1.6.1",
         "phpmailer/phpmailer": "^6.9",
         "vlucas/phpdotenv": "^5.6",
-        "stripe/stripe-php": "^16.1"
+        "stripe/stripe-php": "^16.1",
+        "dompdf/dompdf": "^3.1"
     }
 }

@@ -1,5 +1,5 @@
 <?php
-// grades.php - The main component file
+
 require_once 'includes/validation.php';
 
 if (!isAuthenticated()) {
@@ -58,7 +58,7 @@ if (!isAuthenticated()) {
 
 <style>
 #heatmap-chart .apexcharts-tooltip {
-    background-color: #f8f9fa; /* Matches Sneat's light theme */
+    background-color: #f8f9fa; 
     border-color: #dee2e6;
     color: #212529;
 }
@@ -96,7 +96,7 @@ if (!isAuthenticated()) {
 }
 
 .apexcharts-tooltip-course {
-    background-color: #f8f9fa; /* Matches Sneat's light theme */
+    background-color: #f8f9fa; 
     border: 1px solid #dee2e6;
     color: #212529;
     padding: 10px;

@@ -23,7 +23,7 @@ if($select_members->num_rows){
 }
 
 $userInfo = getUserInfo();
-$userEmail = $userInfo['email']; // This line is missing
+$userEmail = $userInfo['email']; 
 
 // Check if the current user is a member or owner
 $current_user_email = $userEmail;
@@ -382,8 +382,8 @@ $(document).ready(function() {
         replyBox.hide();
     });
 
-    // Load messages every 5 seconds
+    
     loadMessages();
-    setInterval(loadMessages, 500);
+    setInterval(loadMessages, 3000);
 });
 </script>

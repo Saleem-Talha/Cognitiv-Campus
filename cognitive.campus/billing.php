@@ -244,7 +244,6 @@ function checkAndUpdateExpiredSubscription($userEmail) {
     ];
 }
 
-// Add this code right after getting user info
 $subscriptionStatus = checkAndUpdateExpiredSubscription($userEmail);
 if ($subscriptionStatus && $subscriptionStatus['status'] === 'expired') {
     $current_plan = 'basic'; // Update current plan if expired

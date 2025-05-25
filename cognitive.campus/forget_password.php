@@ -65,7 +65,6 @@ if(isset($_POST['email'])) {
     }
 }
 
-// Rest of your HTML remains the same...
 ?>
 
 <!DOCTYPE html>
